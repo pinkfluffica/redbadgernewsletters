@@ -232,11 +232,6 @@
             #templateBody{
                 /*@editable*/ background-color:#F4F4F4;
             }
-            #templateBody a:link, #templateBody a, #templateBody a:visited, /* Yahoo! Mail Override */ #templateBody a .yshortcuts /* Yahoo! Mail Override */ {
-                text-decoration: none;
-                color: inherit;
-            }
-
 
             /**
             * @tab Body
@@ -283,10 +278,6 @@
                 /*@editable*/ background-color: #212121;
                 text-align: center;
             }
-
-/*            .imageContentLast {
-                padding-top: 20px;
-            }*/
 
             /*================ General Styles ===============*/
             .emailButton{
@@ -488,15 +479,9 @@
                     /*@editable*/ line-height:24px!important;
                 }
 
-                .imageContentLast {
-                padding-top: 20px;
-                }
-
                 table[class="emailButton"]{
                     /*width:100% !important;*/
                 }
-
-
 
                 /* ======== Footer Styles ======== */
 
@@ -532,7 +517,7 @@
                                                 <img src="https://gallery.mailchimp.com/0ab76cd515/images/03d3d9b2-39d5-42b9-ad2e-397a19853b39.png" style="height: 35px;">
                                             </td>
                                             <!-- *|IFNOT:ARCHIVE_PAGE|* -->
-                                            <td valign="top" width="140" class="preheaderContent" style="padding-top:20px; padding-right:20px; padding-bottom:20px; padding-left:0;">
+                                            <td valign="top" width="140" class="preheaderContent" style="padding-top:20px; padding-right:20px; padding-bottom:20px; padding-left:0;" mc:edit="preheader_content01">
                                                 <a href="*|ARCHIVE|*" target="_blank">View in your browser</a>
                                             </td>
                                             <!-- *|END:IF|* -->
@@ -546,8 +531,8 @@
                                     <!-- BEGIN BODY // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
                                         <tr>
-                                            <td valign="top" class="bodyContent">
-                                                <h1>We solve complex problems and deliver real impact.</h1>
+                                            <td valign="top" class="bodyContent" mc:edit="body_content">
+                                                <h1>This is a header</h1>
                                             </td>
                                         </tr>
                                         <!-- BEGIN DIAGONAL TAB -->
@@ -572,200 +557,23 @@
                                             </td>
                                         </tr>
                                         <!-- END DIAGONAL TAB -->
-                                        <!-- MODULE ROW // -->
-                                        <tr>
-                                            <td align="center" valign="top">
-                                                <!-- CENTERING TABLE // -->
-                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                    <tr>
-                                                        <td align="center" valign="top">
-                                                            <!-- FLEXIBLE CONTAINER // -->
-                                                            <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
-                                                                <!-- CONTENT ROW -->
-                                                                <tr>
-                                                                    <td valign="top" width="600" class="flexibleContainerCell content-table">
-
-                                                                        <!-- CONTENT TABLE // -->
-                                                                        <table align="Left" border="0" cellpadding="0" cellspacing="0" width="260" class="flexibleContainer" style="border-bottom: 2px solid #565656;min-height: 318px">
-                                                                            <tr>
-                                                                                <td valign="top" class="imageContent" style="padding-top: 20px;">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/fortnum-and-mason/" target="_blank"><img src="awards@3x.png" height="85" class="flexibleImage" style="max-width:125px;" /></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td valign="top" class="textContent">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/fortnum-and-mason/" target="_blank"><h2>Number of awards for the new online store &nbsp;&nbsp;<img src="arrow-copy-5@3x.png" width="15px" alt="arrow points right"></h2></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td valign="top" class="imageContent">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/fortnum-and-mason/" target="_blank"><img src="f-m-logo-copy@3x.png" width="162" class="flexibleImage" style="max-width:162px;" /></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                        <!-- // CONTENT TABLE -->
-
-                                                                        <!-- CONTENT TABLE // -->
-                                                                        <table align="Right" border="0" cellpadding="0" cellspacing="0" width="260" class="flexibleContainer" style="border-bottom: 2px solid #565656; min-height: 318px;">
-                                                                            <tr>
-                                                                                <td valign="top" class="imageContent" style="padding-top: 20px;">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/sky-cms" target="_blank"><img src="50@3x.png" height="85" class="flexibleImage" style="max-width:219px;" /></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td valign="top" class="textContent">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/sky-cms" target="_blank"><h2>Drop in customers pressing 'need more help' button &nbsp;&nbsp;<img src="arrow-copy-5@3x.png" width="15px" alt="arrow points right"></h2></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td valign="top" class="imageContent">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/sky-cms" target="_blank"><img src="sky-logo-copy@3x.png" width="162" class="flexibleImage" style="max-width:45px;" /></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                        <!-- // CONTENT TABLE -->
-
-                                                                    </td>
-                                                                </tr>
-                                                                <!-- // CONTENT ROW -->
-
-                                                                <!-- CONTENT ROW -->
-                                                                <tr>
-                                                                    <td valign="top" width="600" class="flexibleContainerCell content-table">
-
-                                                                        <!-- CONTENT TABLE // -->
-                                                                        <table align="Left" border="0" cellpadding="0" cellspacing="0" width="260" class="flexibleContainer" style="border-bottom: 2px solid #565656;min-height: 300px">
-                                                                            <tr>
-                                                                                <td valign="top" class="imageContent" style="">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/financial-times/" target="_blank"><img src="7-weeks@3x.png" height="85" class="flexibleImage" style="max-width:100px;" /></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td valign="top" class="textContent">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/financial-times/" target="_blank"><h2>Weeks to redesign and redeliver MVP homepage &nbsp;&nbsp;<img src="arrow-copy-5@3x.png" width="15px" alt="arrow points right"></h2></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td valign="top" class="imageContent">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/financial-times/" target="_blank"><img src="f-m-logo-copy@3x.png" width="162" class="flexibleImage" style="max-width:162px;" /></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                        <!-- // CONTENT TABLE -->
-
-
-                                                                        <!-- CONTENT TABLE // -->
-                                                                        <table align="Right" border="0" cellpadding="0" cellspacing="0" width="260" class="flexibleContainer" style="border-bottom: 2px solid #565656; min-height: 300px;">
-                                                                            <tr>
-                                                                                <td valign="top" class="imageContentLast" style="">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/camden-market" target="_blank"><img src="camden-50@3x.png" height="85" class="flexibleImage" style="max-width:210px;" /></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td valign="top" class="textContent">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/camden-market" target="_blank"><h2>Reduction of bounce rate within 4 days of release &nbsp;&nbsp;<img src="arrow-copy-5@3x.png" width="15px" alt="arrow points right"></h2></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td valign="top" class="imageContent">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/camden-market" target="_blank"><img src="camden-market-logo-copy@3x.png" width="162" class="flexibleImage" style="max-width:71px;" /></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                        <!-- // CONTENT TABLE -->
-
-                                                                    </td>
-                                                                </tr>
-                                                                <!-- // CONTENT ROW -->
-
-                                                            </table>
-                                                            <!-- // FLEXIBLE CONTAINER -->
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <!-- // CENTERING TABLE -->
-                                            </td>
-                                        </tr>
-                                        <!-- // MODULE ROW -->
-
-                                        <tr>
-                                            <td align="center" valign="top">
-                                                <!-- CENTERING TABLE // -->
-                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                    <tr>
-                                                        <td align="center" valign="top">
-                                                            <!-- FLEXIBLE CONTAINER // -->
-                                                            <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
-                                                                <tr>
-                                                                    <td align="center" valign="top" width="600" class="flexibleContainerCell bottomShim" style="padding-bottom: 35px; padding-top:30px; background-color: #212121;">
-
-                                                                        <!-- CONTENT TABLE // -->
-                                                                        <!--
-                                                                            The emailButton table's width can be changed
-                                                                            to affect the look of the button. To make the
-                                                                            button width dependent on the text inside, leave
-                                                                            the width blank. When a button is placed in a column,
-                                                                            it's helpful to set the width to 100%.
-                                                                        -->
-                                                                        <table border="0" cellpadding="0" cellspacing="0" width="" class="emailButton">
-                                                                            <tr>
-                                                                                <td align="center" valign="middle" class="buttonContent">
-                                                                                    <a href="https://red-badger.com/our-work" target="_blank">See Our Work</a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                        <!-- // CONTENT TABLE -->
-
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                            <!-- // FLEXIBLE CONTAINER -->
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <!-- // CENTERING TABLE -->
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td align="center" valign="top">
-                                                <!-- CENTERING TABLE // -->
-                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                    <tr>
-                                                        <td align="center" valign="top" style="padding-left: 19px; padding-right: 21px; background-color:#212121;">
-                                                            <!-- FLEXIBLE CONTAINER // -->
-                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                                <tr style="border-bottom: 2px solid #565656">
-                                                                    <td align="center" valign="top" height="2px">
-                                                                    
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                            <!-- // FLEXIBLE CONTAINER -->
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <!-- // CENTERING TABLE -->
-                                            </td>
-                                        </tr>
 
                                     </table>
                                     <!-- // END BODY -->
                                 </td>
                             </tr>
-
                             <tr>
                                 <td align="center" valign="top">
                                     <!-- BEGIN FOOTER // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
                                         <tr>
-                                            <td valign="top" class="preFooterContent">
+                                            <td valign="top" class="preFooterContent" mc:edit="footer_content00">
                                                 <a href="" style="text-decoration: none; color:#F8F8F8; padding-bottom:10px; display:block;">hello@red-badger.com</a>
                                                 <a href="" style="text-decoration: none; color:#F8F8F8;">+44 (0) 20 3567 055</a>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td valign="top" class="socialFooterContent">
+                                            <td valign="top" class="socialFooterContent" mc:edit="footer_content01">
                                                 <a href="https://twitter.com/redbadgerteam?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="https://gallery.mailchimp.com/0ab76cd515/images/74e995b3-3fd7-4ca3-9e1d-6c112823f261.png" class="socialIcon" ></a><a href="https://www.linkedin.com/company/red-badger"><img src="https://gallery.mailchimp.com/0ab76cd515/images/deea1c07-870f-46e7-a775-64ce8df86522.png" class="socialIcon"></a><a href="https://www.instagram.com/redbadgerteam/?hl=en"><img src="https://gallery.mailchimp.com/0ab76cd515/images/3c2ab674-bbc4-491d-979f-6e4b9a7a9acc.png" class="socialIcon"></a><a href="https://www.facebook.com/RedBadger/"><img src="https://gallery.mailchimp.com/0ab76cd515/images/54e4a5f5-03d6-43dd-bdf3-568011643166.png" class="socialIcon"></a><a href="https://www.youtube.com/channel/UCHlIVrJki1BxwKe7NtFYZRg"><img src="https://gallery.mailchimp.com/0ab76cd515/images/897fc07a-191f-43af-9d0d-445b25a93744.png" class="socialIcon"></a><a href="https://plus.google.com/+Redbadgerteam"><img src="https://gallery.mailchimp.com/0ab76cd515/images/9884262e-90c3-4828-9f75-52b8be200416.png" class="socialIcon"></a>
                                             </td>
                                         </tr>
@@ -791,18 +599,18 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td valign="top" class="footerContent">
+                                            <td valign="top" class="footerContent" mc:edit="footer_content02">
                                                 Copyright &copy; *|CURRENT_YEAR|* Red Badger. All rights reserved.
                                                 <br>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td valign="top" class="footerContent" style="padding-top: 0; padding-bottom:30px" >
+                                            <td valign="top" class="footerContent" style="padding-top: 0; padding-bottom:30px" mc:edit="footer_content03">
                                                 You are receiving this email because you signed up to our newsletter. You can <a href="*|UPDATE_PROFILE|*">update your preferences</a> or <a href="*|UNSUB|*">unsubscribe</a> from this list.
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td align="right" valign="top" class="footerContent" style="padding-top:0;padding-bottom:20px; text-align:right" width="50px">
+                                            <td align="right" valign="top" class="footerContent" style="padding-top:0;padding-bottom:20px; text-align:right" mc:edit="footer_content04" width="50px">
                                                 <img src="https://cdn.frontify.com/api/screen/thumbnail/5gktHIi2G_baxAsOX02QSIZIwO-j3jdWEHOhH5eI1GdUSv_yQJvqrR75sG6tTtnryVnSPOGChzplchUVDY_K5Q/931" width="29px">
                                             </td>
                                         </tr>
