@@ -64,7 +64,7 @@
                 /*@editable*/ color:#202020 !important;
                 display:block;
                 /*@editable*/ font-family:Georgia;
-                /*@editable*/ font-size:36px;
+                /*@editable*/ font-size:24px;
                 /*@editable*/ font-style:normal;
                 /*@editable*/ font-weight:bold;
                 /*@editable*/ line-height:40px;
@@ -73,7 +73,7 @@
                 margin-right:0;
                 margin-bottom:70px;
                 margin-left:0;
-                /*@editable*/ text-align:left;
+                /*@editable*/ text-align:center;
             }
 
             /**
@@ -83,7 +83,7 @@
             * @style heading 2
             */
             h2{
-                /*@editable*/ color:#f8f8f8 !important;
+                /*@editable*/ color:#202020;
                 display:block;
                 /*@editable*/ font-family:Georgia;
                 /*@editable*/ font-size:24px;
@@ -105,11 +105,11 @@
             * @style heading 3
             */
             h3{
-                /*@editable*/ color:#606060 !important;
+                /*@editable*/ color:#212121;
                 display:block;
                 /*@editable*/ font-family:Georgia;
-                /*@editable*/ font-size:16px;
-                /*@editable*/ font-style:italic;
+                /*@editable*/ font-size:18px;
+                /*@editable*/ font-style:normal;
                 /*@editable*/ font-weight:bold;
                 /*@editable*/ line-height:100%;
                 /*@editable*/ letter-spacing:normal;
@@ -117,7 +117,7 @@
                 margin-right:0;
                 margin-bottom:10px;
                 margin-left:0;
-                /*@editable*/ text-align:center;
+                /*@editable*/ text-align:left;
             }
 
             /**
@@ -127,18 +127,20 @@
             * @style heading 4
             */
             h4{
-                /*@editable*/ color:#808080 !important;
+                /*@editable*/ color:#808080;
                 display:block;
-                /*@editable*/ font-family:Georgia;
-                /*@editable*/ font-size:14px;
-                /*@editable*/ font-style:italic;
+                /*@editable*/ font-family:Arial;
+                /*@editable*/ font-size:10px;
+                /*@editable*/ font-style:normal;
                 /*@editable*/ font-weight:bold;
                 /*@editable*/ line-height:100%;
                 /*@editable*/ letter-spacing:normal;
-                margin-top:0;
+                /*@editable*/ text-transform: uppercase;
+                /*@editable*/ color: #F8F8F8;
+                margin-top:20px;
                 margin-right:0;
-                margin-bottom:10px;
-                margin-left:0;
+                margin-bottom:5px;
+                margin-left:20px;
                 /*@editable*/ text-align:left;
             }
 
@@ -153,6 +155,7 @@
             #templatePreheader{
                 /*@editable*/ background-color:#F4F4F4;
             }
+
 
             /**
             * @tab Header
@@ -176,6 +179,21 @@
                 /*@editable*/ color:#606060;
                 /*@editable*/ font-weight:normal;
                 /*@editable*/ text-decoration:underline;
+            }
+
+            .navbar {
+                font-family: Arial;
+                font-size: 14px;
+                color: #212121;
+            }
+
+            .navbar a:link, .navbar a:visited, .navbar a .yshortcuts, .navbar a span {
+                font-family: Arial;
+                font-size: 14px;
+                font-weight: bold;
+                color: #212121;
+                text-decoration: underline;
+                -webkit-text-decoration-color: #FC1D42;
             }
 
             /**
@@ -221,6 +239,9 @@
             */
             #templateBody{
                 /*@editable*/ background-color:#F4F4F4;
+                font-family: Arial;
+                font-size: 12px;
+                line-height: 20px;
             }
             #templateBody a:link, #templateBody a, #templateBody a:visited, /* Yahoo! Mail Override */ #templateBody a .yshortcuts /* Yahoo! Mail Override */ {
                 text-decoration: none;
@@ -243,7 +264,25 @@
                 padding-right:20px;
                 padding-bottom:0;
                 padding-left:20px;
-                /*@editable*/ text-align:left;
+                /*@editable*/ text-align:center;
+            }
+
+            /**
+            * @tab Body
+            * @section body headers
+            * @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+            * @theme main
+            */
+
+            .bodyContent h2 {
+                /*@editable*/font-family: Arial;
+                /*@editable*/color: #FC1D42;
+                /*@editable*/font-size: 18px;
+                /*@editable*/margin-bottom: 30px;
+            }
+
+            .bodyContent h1 {
+                margin-bottom: 20px;
             }
 
             /**
@@ -279,71 +318,25 @@
                 text-align: center;
             }
 
-            .textContent {
-                padding:0 8px;
-                min-height: 280px;
+                        /**
+            * @tab Body
+            * @section blog post area
+            * @tip Add or remove blog post news
+            */
+
+            #blog-post-container {
+                color: #f8f8f8;
+            }
+            #blog-post-container h3{
+                color: #f8f8f8;
             }
 
-            .foo {
-                border-left: 1px solid #565656;
-            }
-
-            .bar {
-                border-right: 1px solid #565656;
-            }
-
-            .flexibleContainer .flexibleContainer {
-                border-bottom: 2px solid #565656;
-            }
-            /**
-            * @tab Body
-            * @section body images
-            * @tip Set the height of the main images
-            */
-            .mainImage {
-                /*@editable*/height: 116px;
-            }
-            /**
-            * @tab Body
-            * @section logo image 1
-            * @tip Set the width and height of logo images
-            */
-            .logo1 {
-                /*@editable*/max-width: 162px;
-                /*@editable*/height: auto;
-            }
-             /**
-            * @tab Body
-            * @section logo image 2
-            * @tip Set the width and height of logo images
-            */
-            .logo2 {
-                /*@editable*/max-width: 45px;
-                /*@editable*/height: auto;
-            }
-            /**
-            * @tab Body
-            * @section logo image 3
-            * @tip Set the width and height of logo images
-            */
-            .logo3 {
-                /*@editable*/max-width: 152px;
-                /*@editable*/height: auto;
-            }
-            /**
-            * @tab Body
-            * @section logo image 4
-            * @tip Set the width and height of logo images
-            */
-            .logo4 {
-                /*@editable*/max-width: 71px ;
-                /*@editable*/height: auto;
+            .bottom-banner h2 {
+                color: #f8f8f8;
             }
 
 
-/*            .imageContentLast {
-                padding-top: 20px;
-            }*/
+
 
             /*================ General Styles ===============*/
             .emailButton{
@@ -356,7 +349,7 @@
                         /*////// FRAMEWORK STYLES //////*/
             .flexibleContainerCell{ padding-right:20px; padding-left:20px;}
             .flexibleImage{height:auto;}
-            .bottomShim{padding-bottom:20px;}
+            .bottomShim{padding-bottom:20px; padding-top: 20px;}
 
             /* ========== Footer Styles ========== */
 
@@ -614,21 +607,135 @@
                                             </td>
                                             <!-- *|END:IF|* -->
                                         </tr>
+                                        <tr>
+                                            <td align="center" valign="top" style="border-bottom: 1px solid #CCCCCC; padding: 17px 0 18px 20px" colspan="2">
+                                                <!-- BEGIN Navbar// -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" id="header-navbar">
+                                                    <tr>
+                                                        <td valign="top" class="navbar" style="">
+                                                            <a href="https://red-badger.com/about-us/" target=_"blank">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            <a href="https://red-badger.com/what-we-do/" target=_"blank">What We Do</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            <a href="https://red-badger.com/blog/" target=_"blank">Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // END Navbar -->
+                                            </td>
+                                        </tr>
                                     </table>
                                     <!-- // END PREHEADER -->
                                 </td>
                             </tr>
+                            
                             <tr>
                                 <td align="center" valign="top">
                                     <!-- BEGIN BODY // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
                                         <tr>
                                             <td valign="top" class="bodyContent" mc:edit="body-content">
-                                                <h1>We solve complex problems and deliver real impact.</h1>
+                                                <h2>#Badgernews</h2>
+                                                <h1>Serverless &mdash; is it hype or a real thing?</h1>
                                             </td>
                                         </tr>
-                                        <!-- BEGIN DIAGONAL TAB -->
+                                        <!-- MODULE ROW // -->
                                         <tr>
+                                            <td align="center" valign="top">
+                                                <!-- CENTERING TABLE // -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td align="center" valign="top">
+                                                            <!-- FLEXIBLE CONTAINER // -->
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+                                                                <tr>
+                                                                    <td align="center" valign="top" width="600" class="flexibleContainerCell">
+
+
+                                                                        <!-- CONTENT TABLE // -->
+                                                                        <!--
+                                                                            The table cell imageContent has padding
+                                                                            applied to the bottom as part of the framework,
+                                                                            ensuring images space correctly in Android Gmail.
+                                                                        -->
+                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td valign="top" class="imageContent">
+                                                                                    <img src="http://us.123rf.com/450wm/dimasobko/dimasobko1205/dimasobko120500119/13507915-british-kitten-cat-isolated-on-a-black-background.jpg" width="560" class="flexibleImage" style="max-width:560px;" />
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <!-- // CONTENT TABLE -->
+
+
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- // FLEXIBLE CONTAINER -->
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // CENTERING TABLE -->
+                                            </td>
+                                        </tr>
+                                        <!-- // MODULE ROW -->
+
+                                        <!-- MODULE ROW // -->
+                                        <tr>
+                                            <td align="center" valign="top" style="padding: 30px 0 20px 0;">
+                                                <!-- CENTERING TABLE // -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td align="center" valign="top">
+                                                            <!-- FLEXIBLE CONTAINER // -->
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+                                                                <tr>
+                                                                    <td valign="top" width="600" class="flexibleContainerCell">
+
+
+                                                                        <!-- CONTENT TABLE // -->
+                                                                        <!--
+                                                                            In multi-column content blocks, the
+                                                                            content tables are given set widths
+                                                                            and the flexibleContainer class.
+                                                                        -->
+                                                                        <table align="Left" border="0" cellpadding="0" cellspacing="0" width="260" class="flexibleContainer">
+                                                                            <tr>
+                                                                                <td valign="top">
+                                                                                    <h3><a href="">Do I really have to stand? An Agile Glossary &nbsp;<img src="https://gallery.mailchimp.com/0ab76cd515/images/bd1296c0-c59a-4d81-9fa4-c07be8ce6b16.png" width="13px" alt="arrow points right"></a></h3>
+                                                                                    <br />
+                                                                                    A kitten or kitty is a juvenile domesticated cat. A feline litter usually consists of two to five kittens. To survive, kittens need the care of their mother for the first several weeks of their life. Kittens are highly social animals and spend most of their waking hours playing and interacting with available companions.
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <!-- // CONTENT TABLE -->
+
+
+                                                                        <!-- CONTENT TABLE // -->
+                                                                        <table align="Right" border="0" cellpadding="0" cellspacing="0" width="260" class="flexibleContainer">
+                                                                            <tr>
+                                                                                <td valign="top">
+                                                                                    <h3>Strategy in San Fransisco &nbsp;<img src="https://gallery.mailchimp.com/0ab76cd515/images/bd1296c0-c59a-4d81-9fa4-c07be8ce6b16.png" width="13px" alt="arrow points right"></h3>
+                                                                                    <br />
+                                                                                    A kitten or kitty is a juvenile domesticated cat. A feline litter usually consists of two to five kittens. To survive, kittens need the care of their mother for the first several weeks of their life. Kittens are highly social animals and spend most of their waking hours playing and interacting with available companions.
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <!-- // CONTENT TABLE -->
+
+
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- // FLEXIBLE CONTAINER -->
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // CENTERING TABLE -->
+                                            </td>
+                                        </tr>
+                                        <!-- // MODULE ROW -->
+
+                                        <!-- BEGIN DIAGONAL TAB -->
+                                        <tr mc:hideable>
                                             <td align="center" valign="top">
                                                 <!-- CENTERING TABLE // -->
                                                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -649,6 +756,226 @@
                                             </td>
                                         </tr>
                                         <!-- END DIAGONAL TAB -->
+
+                                        
+                                        <tr>
+                                            <td id="blog-post-container" style="background-color:#212121;" mc:edit="blog-posts" mc:hideable>
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td align="Left" valign="top" >
+                                                                        <h4>More from our blog</h4>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    
+
+                                                    <!-- MODULE ROW // -->
+                                                    <tr mc:repeatable>
+                                                        <td align="center" valign="top">
+                                                            <!-- CENTERING TABLE // -->
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <!-- BEGIN DIVIDER -->
+                                                                <tr>
+                                                                    <td align="center" valign="top">
+                                                                        <!-- CENTERING TABLE // -->
+                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td align="center" valign="top" style="padding-left: 19px; padding-right: 21px;">
+                                                                                    <!-- FLEXIBLE CONTAINER // -->
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                        <tr style="border-bottom: 2px solid #565656;">
+                                                                                            <td align="center" valign="top" height="2px">
+                                                                                            
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                    <!-- // FLEXIBLE CONTAINER -->
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <!-- // CENTERING TABLE -->
+                                                                    </td>
+                                                                </tr>
+                                                                <!-- END DIVIDER -->
+                                                                <tr>
+                                                                    <td align="center" valign="top">
+                                                                        <!-- FLEXIBLE CONTAINER // -->
+                                                                        <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+                                                                            <tr>
+                                                                                <td align="center" valign="top" width="600" class="flexibleContainerCell bottomShim">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="nestedContainer">
+                                                                                        <tr>
+                                                                                            <td valign="top" class="nestedContainerCell">
+
+
+                                                                                                <!-- CONTENT TABLE // -->
+                                                                                                <table align="Right" border="0" cellpadding="0" cellspacing="0" width="200" class="flexibleContainer">
+                                                                                                    <tr>
+                                                                                                        <td align="Left" valign="top" class="imageContent">
+                                                                                                            <img src="http://placekitten.com/g/400/400" width="200" class="flexibleImage" style="max-width:200px; max-height:100px;" />
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                                <!-- // CONTENT TABLE -->
+                                    
+                                    
+                                                                                                <!-- CONTENT TABLE // -->
+                                                                                                <table align="Left" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer">
+                                                                                                    <tr>
+                                                                                                        <td valign="top">
+                                                                                                            <h3>Choosing the best photos &nbsp;<img src="https://gallery.mailchimp.com/0ab76cd515/images/bd1296c0-c59a-4d81-9fa4-c07be8ce6b16.png" width="15px" alt="arrow points right"></h3>
+                                                                                                            <br />
+                                                                                                            A kitten or kitty is a juvenile domesticated cat. Kittens are highly social animals and spend most of their waking hours playing and interacting with available companions.
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                                <!-- // CONTENT TABLE -->
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <!-- // FLEXIBLE CONTAINER -->
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- // CENTERING TABLE -->
+                                                        </td>
+                                                    </tr>
+                                                    <!-- // MODULE ROW -->
+
+                                                    <!-- MODULE ROW // -->
+                                                    <tr mc:repeatable>
+                                                        <td align="center" valign="top">
+                                                            <!-- CENTERING TABLE // -->
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <!-- BEGIN DIVIDER -->
+                                                                <tr>
+                                                                    <td align="center" valign="top">
+                                                                        <!-- CENTERING TABLE // -->
+                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td align="center" valign="top" style="padding-left: 19px; padding-right: 21px;">
+                                                                                    <!-- FLEXIBLE CONTAINER // -->
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                        <tr style="border-bottom: 2px solid #565656;">
+                                                                                            <td align="center" valign="top" height="2px">
+                                                                                            
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                    <!-- // FLEXIBLE CONTAINER -->
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <!-- // CENTERING TABLE -->
+                                                                    </td>
+                                                                </tr>
+                                                                <!-- END DIVIDER -->
+                                                                <tr>
+                                                                    <td align="center" valign="top">
+                                                                        <!-- FLEXIBLE CONTAINER // -->
+                                                                        <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+                                                                            <tr>
+                                                                                <td align="center" valign="top" width="600" class="flexibleContainerCell bottomShim">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="nestedContainer">
+                                                                                        <tr>
+                                                                                            <td valign="top" class="nestedContainerCell">
+
+
+                                                                                                <!-- CONTENT TABLE // -->
+                                                                                                <table align="Right" border="0" cellpadding="0" cellspacing="0" width="200" class="flexibleContainer">
+                                                                                                    <tr>
+                                                                                                        <td align="Left" valign="top" class="imageContent">
+                                                                                                            <img src="http://placekitten.com/g/400/400" width="200" class="flexibleImage" style="max-width:200px; max-height:100px;" />
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                                <!-- // CONTENT TABLE -->
+                                    
+                                    
+                                                                                                <!-- CONTENT TABLE // -->
+                                                                                                <table align="Left" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer">
+                                                                                                    <tr>
+                                                                                                        <td valign="top">
+                                                                                                            <h3>Strangeloop 2016 &nbsp;<img src="https://gallery.mailchimp.com/0ab76cd515/images/bd1296c0-c59a-4d81-9fa4-c07be8ce6b16.png" width="15px" alt="arrow points right"></h3>
+                                                                                                            <br />
+                                                                                                            What follows is a high level masterclass of something...
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                                <!-- // CONTENT TABLE -->
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <!-- // FLEXIBLE CONTAINER -->
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- // CENTERING TABLE -->
+                                                        </td>
+                                                    </tr>
+                                                    <!-- // MODULE ROW -->
+
+                                                </table>
+                                            </td>
+                                        </tr>
+
+
+                                        <!-- BEGIN DIAGONAL TAB -->
+                                        <tr mc:hideable>
+                                            <td align="center" valign="top">
+                                                <!-- CENTERING TABLE // -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td align="center" valign="top">
+                                                       <!-- TAB CONTAINER // -->
+                                                            <table border="" cellpadding="0" cellspacing="0" width="100%" style="border-top: none;border-left: none;border-right: none;border-bottom: none;border-collapse: separate!important;">
+                                                                <tr>
+                                                                    <td valign="top" height="" style="background-color:#212121;border: 0;"></td>
+                                                                    <td valign="top" height="" width="52%" border="0" style="border:0;"><div style="border-bottom-color: #f4f4f4;border-bottom-width: 9px; border-left-color: transparent;border-left-width: 9px;background-color: #212121;border-top: 0; border-right:0; border-style:solid;"></div></td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- // TAB CONTAINER -->
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // CENTERING TABLE -->
+                                            </td>
+                                        </tr>
+                                        <!-- END DIAGONAL TAB -->
+
+                                        <!-- BEGIN DIAGONAL TAB -->
+                                        <tr mc:hideable>
+                                            <td align="center" valign="top">
+                                                <!-- CENTERING TABLE // -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td align="center" valign="top">
+                                                       <!-- TAB CONTAINER // -->
+                                                            <table border="" cellpadding="0" cellspacing="0" width="100%" style="border-top: none;border-left: none;border-right: none;border-bottom: none;border-collapse: separate!important;">
+                                                                <tr>
+                                                                    <td valign="top" height="" style="background-color:#F4F4F4;border: 0;"></td>
+                                                                    <td valign="top" height="" width="52%" border="0" style="border:0;"><div style="border-bottom-color: #fc1d42;border-bottom-width: 9px; border-left-color: transparent;border-left-width: 9px;background-color: #f1f1f1;border-top: 0; border-right:0; border-style:solid;"></div></td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- // TAB CONTAINER -->
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // CENTERING TABLE -->
+                                            </td>
+                                        </tr>
+                                        <!-- END DIAGONAL TAB -->
                                         <!-- MODULE ROW // -->
                                     </table>
                                     <!-- // END BODY -->
@@ -656,124 +983,11 @@
                             </tr>
 
                             <tr>
-                                <td align="center" valign="top">
+                                <td align="center" valign="top" class="bottom-banner">
                                     <!-- BEGIN BODY 2 // -->
 
-                                    <table style="background-color: #212121;">
-                                        <tr>
-                                            <td align="center" valign="top" class="bodyContent2">
-                                                <!-- CENTERING TABLE // -->
-                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                    <tr>
-                                                        <td align="center" valign="top">
-                                                            <!-- FLEXIBLE CONTAINER // -->
-                                                            <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
-                                                                <!-- CONTENT ROW -->
-                                                                <tr>
-                                                                    <td valign="top" width="600" class="flexibleContainerCell content-table" style="padding-top:20px;">
-
-                                                                        <!-- CONTENT TABLE // -->
-                                                                        <table align="Left" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer" style="min-height: 318px">
-                                                                            <tr class="bar">
-                                                                                <td valign="top" class="mainImage" style="padding-top: 20px;">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/fortnum-and-mason/" target="_blank"><img src="https://gallery.mailchimp.com/0ab76cd515/images/bdc6a5ee-0892-4804-862a-f6f0ab73cee0.png" height="85" class="flexibleImage" style="max-width:125px;" mc:edit></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr class="bar">
-                                                                                <td valign="top" class="textContent" mc:edit="text-content01">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/fortnum-and-mason/" target="_blank"><h2>Number of awards for the new online store &nbsp;<img src="https://gallery.mailchimp.com/0ab76cd515/images/bd1296c0-c59a-4d81-9fa4-c07be8ce6b16.png" width="15px" alt="arrow points right"></h2></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr class="bar">
-                                                                                <td valign="top" class="imageContent">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/fortnum-and-mason/" target="_blank"><img src="https://gallery.mailchimp.com/0ab76cd515/images/ad6548c6-52cb-431c-aea6-86ff09de944f.png" width="162" class="flexibleImage logo1" mc:edit></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                        <!-- // CONTENT TABLE -->
-
-                                                                        <!-- CONTENT TABLE // -->
-                                                                        <table align="Right" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer" style="min-height: 318px;">
-                                                                            <tr class="foo">
-                                                                                <td valign="top" class="mainImage" style="padding-top: 20px;">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/sky-cms" target="_blank"><img src="https://gallery.mailchimp.com/0ab76cd515/images/2555ebc0-0555-4c99-867c-99f2024309eb.png" height="85" class="flexibleImage" style="max-width:219px;" mc:edit></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr class="foo">
-                                                                                <td valign="top" class="textContent" mc:edit="text-content02">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/sky-cms" target="_blank"><h2>Drop in customers pressing 'need more help' button &nbsp;<img src="https://gallery.mailchimp.com/0ab76cd515/images/bd1296c0-c59a-4d81-9fa4-c07be8ce6b16.png" width="15px" alt="arrow points right"></h2></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr class="foo">
-                                                                                <td valign="top" class="imageContent">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/sky-cms" target="_blank"><img src="https://gallery.mailchimp.com/0ab76cd515/images/ed4b9ae0-dd06-4605-b7b5-0ff5844919a9.png" width="162" class="flexibleImage logo2" mc:edit></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                        <!-- // CONTENT TABLE -->
-
-                                                                    </td>
-                                                                </tr>
-                                                                <!-- // CONTENT ROW -->
-
-                                                                <!-- CONTENT ROW -->
-                                                                <tr>
-                                                                    <td valign="top" width="600" class="flexibleContainerCell content-table">
-
-                                                                        <!-- CONTENT TABLE // -->
-                                                                        <table align="Left" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer" style="min-height: 300px">
-                                                                            <tr class="bar">
-                                                                                <td valign="top" class="mainImage" style="padding-top:20px">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/financial-times/" target="_blank"><img src="https://gallery.mailchimp.com/0ab76cd515/images/7de81ecb-d2e8-408f-8b44-0664cf8367c8.png" height="85" class="flexibleImage" style="max-width:100px;" mc:edit></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr class="bar">
-                                                                                <td valign="top" class="textContent" mc:edit="text-content03">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/financial-times/" target="_blank"><h2>Weeks to redesign and redeliver MVP homepage &nbsp;<img src="https://gallery.mailchimp.com/0ab76cd515/images/bd1296c0-c59a-4d81-9fa4-c07be8ce6b16.png" width="15px" alt="arrow points right"></h2></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr class="bar">
-                                                                                <td valign="top" class="imageContent">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/financial-times/" target="_blank"><img src="https://gallery.mailchimp.com/0ab76cd515/images/846d2a4c-381d-43e9-bfc3-cc8089e8b4ba.png" class="flexibleImage logo3" mc:edit></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                        <!-- // CONTENT TABLE -->
-
-
-                                                                        <!-- CONTENT TABLE // -->
-                                                                        <table align="Right" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer" style="min-height: 300px;">
-                                                                            <tr class="foo">
-                                                                                <td valign="top" class="mainImage imageContentLast" style="padding-top:20px;">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/camden-market" target="_blank"><img src="https://gallery.mailchimp.com/0ab76cd515/images/bd948725-4f18-4dc3-83a8-fbb1a853f6de.png" height="85" class="flexibleImage" style="max-width:210px;" mc:edit></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr class="foo">
-                                                                                <td valign="top" class="textContent" mc:edit="text-content04">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/camden-market" target="_blank"><h2>Reduction of bounce rate within 4 days of release &nbsp;<img src="https://gallery.mailchimp.com/0ab76cd515/images/bd1296c0-c59a-4d81-9fa4-c07be8ce6b16.png" width="15px" alt="arrow points right"></h2></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr class="foo">
-                                                                                <td valign="top" class="imageContent">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/camden-market" target="_blank"><img src="https://gallery.mailchimp.com/0ab76cd515/images/f051e6b4-8d25-4cac-af47-fc911e463baa.png" class="flexibleImage logo4" mc:edit></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                        <!-- // CONTENT TABLE -->
-
-                                                                    </td>
-                                                                </tr>
-                                                                <!-- // CONTENT ROW -->
-
-                                                            </table>
-                                                            <!-- // FLEXIBLE CONTAINER -->
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <!-- // CENTERING TABLE -->
-                                            </td>
-                                        </tr>
-                                        <!-- // MODULE ROW -->
+                                    <table style="background-color: #FC1D42;">
+                                        
 
                                         <tr>
                                             <td align="center" valign="top">
@@ -784,7 +998,7 @@
                                                             <!-- FLEXIBLE CONTAINER // -->
                                                             <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
                                                                 <tr>
-                                                                    <td align="center" valign="top" width="600" class="flexibleContainerCell bottomShim" style="padding-bottom: 35px; padding-top:30px; ">
+                                                                    <td align="center" valign="top" width="600" class="flexibleContainerCell bottomShim" style="padding-bottom: 35px; padding-top:30px; background-color:#FC1D42; ">
 
                                                                         <!-- CONTENT TABLE // -->
                                                                         <!--
@@ -794,37 +1008,9 @@
                                                                             the width blank. When a button is placed in a column,
                                                                             it's helpful to set the width to 100%.
                                                                         -->
-                                                                        <table border="0" cellpadding="0" cellspacing="0" width="" class="emailButton">
-                                                                            <tr>
-                                                                                <td align="center" valign="middle" class="buttonContent">
-                                                                                    <a href="https://red-badger.com/our-work" target="_blank">See our work</a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
+                                                                        <h2>Let's make things better</h2>
                                                                         <!-- // CONTENT TABLE -->
 
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                            <!-- // FLEXIBLE CONTAINER -->
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <!-- // CENTERING TABLE -->
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td align="center" valign="top">
-                                                <!-- CENTERING TABLE // -->
-                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                    <tr>
-                                                        <td align="center" valign="top" style="padding-left: 19px; padding-right: 21px;">
-                                                            <!-- FLEXIBLE CONTAINER // -->
-                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                                <tr style="border-bottom: 2px solid #565656;">
-                                                                    <td align="center" valign="top" height="2px">
-                                                                    
                                                                     </td>
                                                                 </tr>
                                                             </table>
