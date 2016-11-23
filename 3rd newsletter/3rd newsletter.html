@@ -318,25 +318,26 @@
                 text-align: center;
             }
 
-                        /**
+            /**
             * @tab Body
-            * @section blog post area
-            * @tip Add or remove blog post news
+            * @section blog headings
+            * @tip Change the headers in the dark blog post area
             */
 
             #blog-post-container {
-                color: #f8f8f8;
+                /*@editable*/color: #f8f8f8;
             }
             #blog-post-container h3{
-                color: #f8f8f8;
+                /*@editable*/color: #f8f8f8;
+                /*@editable*/margin-top: 10px;
             }
 
             #three-column-container h4 {
-                color: #212121;
+                /*@editable*/color: #212121;
             }
 
             .bottom-banner h2 {
-                color: #f8f8f8;
+                /*@editable*/color: #f8f8f8;
             }
 
 
@@ -701,7 +702,7 @@
                                                                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                                             <tr>
                                                                                 <td valign="top" class="imageContent">
-                                                                                    <img src="http://us.123rf.com/450wm/dimasobko/dimasobko1205/dimasobko120500119/13507915-british-kitten-cat-isolated-on-a-black-background.jpg" width="560" class="flexibleImage" style="max-width:560px;" mc:edit="headline" />
+                                                                                    <img src="https://gallery.mailchimp.com/0ab76cd515/images/3c966329-41eb-4590-86a9-f49be6e1aab7.png" width="560" class="flexibleImage" style="max-width:560px;" mc:edit="headline" />
                                                                                 </td>
                                                                             </tr>
                                                                         </table>
@@ -817,7 +818,7 @@
                                                     
 
                                                     <!-- MODULE ROW // -->
-                                                    <tr>
+                                                    <tr mc:repeatable mc:variant="left-image-text">
                                                         <td align="center" valign="top">
                                                             <!-- CENTERING TABLE // -->
                                                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -859,7 +860,7 @@
                                                                                                 <table align="Right" border="0" cellpadding="0" cellspacing="0" width="200" class="flexibleContainer">
                                                                                                     <tr>
                                                                                                         <td align="Left" valign="top" class="imageContent">
-                                                                                                            <img src="http://placekitten.com/g/400/400" width="200" class="flexibleImage" style="max-width:200px; max-height:100px;" mc:edit="blogimage01" />
+                                                                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Yellow_rectangle.svg/2000px-Yellow_rectangle.svg.png" width="200" class="flexibleImage" style="max-width:200px;" mc:edit="blogimage"/>
                                                                                                         </td>
                                                                                                     </tr>
                                                                                                 </table>
@@ -869,10 +870,9 @@
                                                                                                 <!-- CONTENT TABLE // -->
                                                                                                 <table align="Left" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer">
                                                                                                     <tr>
-                                                                                                        <td valign="top" mc:edit="blogtext01">
-                                                                                                            <h3>Choosing the best photos &nbsp;<img src="https://gallery.mailchimp.com/0ab76cd515/images/bd1296c0-c59a-4d81-9fa4-c07be8ce6b16.png" width="13px" alt="arrow points right"></h3>
-                                                                                                            <br />
-                                                                                                            A kitten or kitty is a juvenile domesticated cat. Kittens are highly social animals and spend most of their waking hours playing and interacting with available companions.
+                                                                                                        <td valign="top" mc:edit="blogtext">
+                                                                                                            <h3>Strangeloop 2016 &nbsp;<img src="https://gallery.mailchimp.com/0ab76cd515/images/bd1296c0-c59a-4d81-9fa4-c07be8ce6b16.png" width="13px" alt="arrow points right"></h3>
+                                                                                                            <br />What follows is a high level masterclass of something... What follows is a high level masterclass of something...lots of long content to show that the text will be full width and travel across the page occupying the space where the image would be.
                                                                                                         </td>
                                                                                                     </tr>
                                                                                                 </table>
@@ -891,10 +891,8 @@
                                                         </td>
                                                     </tr>
                                                     <!-- // MODULE ROW -->
-
-                                                    <!-- MODULE ROW // -->
-                                                    <tr mc:repeatable>
-                                                        <td align="center" valign="top" mc:edit="blogtext02">
+                                                    <tr mc:repeatable mc:variant="full-width-text">
+                                                        <td align="center" valign="top">
                                                             <!-- CENTERING TABLE // -->
                                                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                                 <!-- BEGIN DIVIDER -->
@@ -929,26 +927,13 @@
                                                                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="nestedContainer">
                                                                                         <tr>
                                                                                             <td valign="top" class="nestedContainerCell">
-
-
-                                                                                                <!-- CONTENT TABLE // -->
-                                                                                                <table align="Right" border="0" cellpadding="0" cellspacing="0" width="200" class="flexibleContainer">
-                                                                                                    <tr>
-                                                                                                        <td align="Left" valign="top" class="imageContent">
-                                                                                                            <img src="http://placekitten.com/g/400/400" width="200" class="flexibleImage" style="max-width:200px; max-height:100px;"/>
-                                                                                                        </td>
-                                                                                                    </tr>
-                                                                                                </table>
-                                                                                                <!-- // CONTENT TABLE -->
-                                    
                                     
                                                                                                 <!-- CONTENT TABLE // -->
-                                                                                                <table align="Left" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer">
+                                                                                                <table valign="top" border="0" cellpadding="0" cellspacing="0" width="100%" class="flexibleContainer">
                                                                                                     <tr>
-                                                                                                        <td valign="top">
+                                                                                                        <td valign="top" mc:edit="blogtext">
                                                                                                             <h3>Strangeloop 2016 &nbsp;<img src="https://gallery.mailchimp.com/0ab76cd515/images/bd1296c0-c59a-4d81-9fa4-c07be8ce6b16.png" width="13px" alt="arrow points right"></h3>
-                                                                                                            <br />
-                                                                                                            What follows is a high level masterclass of something...
+                                                                                                            <br />What follows is a high level masterclass of something...lots of long content to show that the text will be full width and travel across the page occupying the space where the image would be.
                                                                                                         </td>
                                                                                                     </tr>
                                                                                                 </table>
@@ -1038,10 +1023,10 @@
                                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns">
                                                                 <tr mc:repeatable>
                                                                     <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
-                                                                        <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                                        <table border="0" cellpadding="10" cellspacing="0" width="100%">
                                                                             <tr>
                                                                                 <td class="leftColumnContent">
-                                                                                    <img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+                                                                                    <img src="https://gallery.mailchimp.com/0ab76cd515/images/0951ff56-c3cc-4246-bf48-f0cadde4c3e6.png" style="max-width:180px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
@@ -1056,10 +1041,10 @@
                                                                         </table>
                                                                     </td>
                                                                     <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
-                                                                        <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                                        <table border="0" cellpadding="10" cellspacing="0" width="100%">
                                                                             <tr>
                                                                                 <td class="centerColumnContent">
-                                                                                    <img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="center_column_image" mc:edit="center_column_image" />
+                                                                                    <img src="https://gallery.mailchimp.com/0ab76cd515/images/bca75638-4623-49aa-b5c8-0f15b6f2f6cd.png" style="max-width:180px;" class="columnImage" mc:label="center_column_image" mc:edit="center_column_image" />
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
@@ -1074,10 +1059,10 @@
                                                                         </table>
                                                                     </td>
                                                                     <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
-                                                                        <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                                        <table border="0" cellpadding="10" cellspacing="0" width="100%">
                                                                             <tr>
                                                                                 <td class="rightColumnContent">
-                                                                                    <img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
+                                                                                    <img src="https://gallery.mailchimp.com/0ab76cd515/images/95ffc0e7-cad2-45ea-9f3e-00ae0b189208.png" style="max-width:180px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
