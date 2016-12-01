@@ -1,654 +1,635 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>*|MC:SUBJECT|*</title>
-        <style type="text/css">
-            /* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
-            #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
-            .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
-            .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
-            body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
-            table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
-            img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
-
-            /* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
-            body{margin:0; padding:0;}
-            img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
-            table{border-collapse:collapse !important;}
-            body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
-
-            /* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
-
-            /* ========== Page Styles ========== */
-
-            #bodyCell{padding:20px;}
-            #templateContainer{width:600px;}
-
-            /**
-            * @tab Page
-            * @section background style
-            * @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
-            * @theme page
-            */
-            body, #bodyTable{
-                /*@editable*/ background-color:#DEE0E2;
-            }
-
-            /**
-            * @tab Page
-            * @section background style
-            * @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
-            * @theme page
-            */
-            #bodyCell{
-
-            }
-
-            /**
-            * @tab Page
-            * @section email border
-            * @tip Set the border for your email.
-            */
-            #templateContainer{
-
-            }
-
-            /**
-            * @tab Page
-            * @section heading 1
-            * @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
-            * @style heading 1
-            */
-            h1{
-                /*@editable*/ color:#202020 !important;
-                display:block;
-                /*@editable*/ font-family:Georgia;
-                /*@editable*/ font-size:24px;
-                /*@editable*/ font-style:normal;
-                /*@editable*/ font-weight:bold;
-                /*@editable*/ line-height:40px;
-                /*@editable*/ letter-spacing:normal;
-                margin-top:10px;
-                margin-right:0;
-                margin-bottom:70px;
-                margin-left:0;
-                /*@editable*/ text-align:center;
-            }
-
-            /**
-            * @tab Page
-            * @section heading 2
-            * @tip Set the styling for all second-level headings in your emails.
-            * @style heading 2
-            */
-            h2{
-                /*@editable*/ color:#202020;
-                display:block;
-                /*@editable*/ font-family:Georgia;
-                /*@editable*/ font-size:24px;
-                /*@editable*/ font-style:normal;
-                /*@editable*/ font-weight:bold;
-                /*@editable*/ line-height:30px;
-                /*@editable*/ letter-spacing:normal;
-                margin-top:0;
-                /*margin-right:0;*/
-                margin-bottom:0;
-                /*margin-left:0;*/
-                /*@editable*/ text-align:center;
-            }
-
-            /**
-            * @tab Page
-            * @section heading 3
-            * @tip Set the styling for all third-level headings in your emails.
-            * @style heading 3
-            */
-            h3{
-                /*@editable*/ color:#212121;
-                display:block;
-                /*@editable*/ font-family:Georgia;
-                /*@editable*/ font-size:18px;
-                /*@editable*/ font-style:normal;
-                /*@editable*/ font-weight:bold;
-                /*@editable*/ line-height:22px;
-                /*@editable*/ letter-spacing:normal;
-                margin-top:20px;
-                margin-right:0;
-                margin-bottom:15px;
-                margin-left:0;
-                /*@editable*/ text-align:left;
-            }
-
-            /**
-            * @tab Page
-            * @section heading 4
-            * @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
-            * @style heading 4
-            */
-            h4{
-                /*@editable*/ color:#808080;
-                display:block;
-                /*@editable*/ font-family:Arial;
-                /*@editable*/ font-size:10px;
-                /*@editable*/ font-style:normal;
-                /*@editable*/ font-weight:bold;
-                /*@editable*/ line-height:100%;
-                /*@editable*/ letter-spacing:normal;
-                /*@editable*/ text-transform: uppercase;
-                /*@editable*/ color: #F8F8F8;
-                margin-top:20px;
-                margin-right:0;
-                margin-bottom:5px;
-                margin-left:20px;
-                /*@editable*/ text-align:left;
-            }
-
-            /* ========== Header Styles ========== */
-
-            /**
-            * @tab Header
-            * @section preheader style
-            * @tip Set the background color and bottom border for your email's preheader area.
-            * @theme header
-            */
-            #templatePreheader{
-                /*@editable*/ background-color:#F4F4F4;
-            }
-
-
-            /**
-            * @tab Header
-            * @section preheader text
-            * @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
-            */
-            .preheaderContent{
-                /*@editable*/ color:#808080;
-                /*@editable*/ font-family:Arial;
-                font-size:12px;
-                /*@editable*/ line-height:125%;
-                /*@editable*/ text-align:left;
-            }
-
-            /**
-            * @tab Header
-            * @section preheader link
-            * @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
-            */
-            .preheaderContent a:link, .preheaderContent a:visited, /* Yahoo! Mail Override */ .preheaderContent a .yshortcuts /* Yahoo! Mail Override */{
-                /*@editable*/ color:#606060;
-                /*@editable*/ font-weight:normal;
-                /*@editable*/ text-decoration:underline;
-            }
-
-            .navbar {
-                font-family: Arial;
-                font-size: 14px;
-                color: #212121;
-            }
-
-            .navbar a:link, .navbar a:visited, .navbar a .yshortcuts, .navbar a span {
-                font-family: Arial;
-                font-size: 14px;
-                font-weight: bold;
-                color: #212121;
-                text-decoration: underline;
-                -webkit-text-decoration-color: #FC1D42;
-            }
-
-            /**
-            * @tab Header
-            * @section header style
-            * @tip Set the background color and borders for your email's header area.
-            * @theme header
-            */
-            #templateHeader{
-                /*@editable*/ background-color:#F4F4F4;
-                /*@editable*/ border-top:1px solid #FFFFFF;
-
-            }
-
-            /**
-            * @tab Header
-            * @section header text
-            * @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
-            */
-            .headerContent{
-                /*@editable*/ color:#505050;
-                /*@editable*/ font-family:Arial;
-                /*@editable*/ font-size:20px;
-                /*@editable*/ font-weight:bold;
-                /*@editable*/ line-height:100%;
-                /*@editable*/ padding-top:0;
-                /*@editable*/ padding-right:0;
-                /*@editable*/ padding-bottom:0;
-                /*@editable*/ padding-left:0;
-                /*@editable*/ text-align:left;
-                /*@editable*/ vertical-align:middle;
-            }
-
-
-
-
-            /* ========== Body Styles ========== */
-
-            /**
-            * @tab Body
-            * @section body style
-            * @tip Set the background color and borders for your email's body area.
-            */
-            #templateBody{
-                /*@editable*/ background-color:#F4F4F4;
-                font-family: Arial;
-                font-size: 12px;
-                line-height: 18px;
-            }
-            #templateBody a:link, #templateBody a, #templateBody a:visited, /* Yahoo! Mail Override */ #templateBody a .yshortcuts /* Yahoo! Mail Override */ {
-                text-decoration: none;
-                color: inherit;
-            }
-
-
-            /**
-            * @tab Body
-            * @section body text
-            * @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
-            * @theme main
-            */
-            .bodyContent{
-                /*@editable*/ color:#505050;
-                /*@editable*/ font-family:Arial;
-                /*@editable*/ font-size:16px;
-                /*@editable*/ line-height:24px;
-                padding-top:25px;
-                padding-right:20px;
-                padding-bottom:0;
-                padding-left:20px;
-                /*@editable*/ text-align:center;
-            }
-
-            /**
-            * @tab Body
-            * @section body headers
-            * @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
-            * @theme main
-            */
-
-            .bodyContent h2 {
-                /*@editable*/font-family: Arial;
-                /*@editable*/color: #FC1D42;
-                /*@editable*/font-size: 18px;
-                /*@editable*/margin-bottom: 30px;
-                line-height: normal;
-            }
-
-            .bodyContent h1 {
-                margin-bottom: 20px;
-                margin-top: 0;
-                line-height: normal;
-            }
-
-            /**
-            * @tab Body
-            * @section body link
-            * @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
-            */
-            .bodyContent a:link, .bodyContent a:visited, /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{
-                /*@editable*/ color:#EB4102;
-                /*@editable*/ font-weight:normal;
-                /*@editable*/ text-decoration:underline;
-            }
-
-            .bodyContent img{
-                display:inline;
-                height:auto;
-                max-width:560px;
-            }
-
-            .bodyContent2 a:link, .bodyContent2 a, .bodyContent2 a:visited, /* Yahoo! Mail Override */ .bodyContent2 a .yshortcuts /* Yahoo! Mail Override */ {
-                text-decoration: none;
-                color: inherit;
-            }
-
-            /**
-            * @tab Body
-            * @section body content
-            * @tip Set the background color of the content tables
-            */
-
-            .content-table {
-                /*@editable*/ background-color: #212121;
-                text-align: center;
-            }
-
-            /**
-            * @tab Body
-            * @section blog headings
-            * @tip Change the headers in the dark blog post area
-            */
-
-            #blog-post-container {
-                /*@editable*/color: #f8f8f8;
-            }
-            #blog-post-container h3{
-                /*@editable*/color: #f8f8f8;
-                margin-top: 0;
-            }
-
-            #three-column-container h4 {
-                /*@editable*/color: #212121;
-                margin-top: 26px;
-                margin-bottom: 0;
-            }
-
-            .bottom-banner h2 {
-                /*@editable*/color: #f8f8f8;
-            }
-
-            .templateColumnContainer {
-                width:33.3%;
-                padding: 0 5px 20px 5px;
-            }
-
-            #templateColumns h3 {
-                margin-top: 0;
-                font-size: 14px;
-                line-height: 16px;
-            }
-            .constrain-columns {
-                padding-left:15px;
-                padding-right:15px;
-                padding-top: 20px;
-            }
-
-
-
-            /*================ General Styles ===============*/
-            .emailButton{
-                /*@editable*/background-color:#FC1D42; 
-                border-collapse:separate; 
-                }
-            .buttonContent{color:#FFFFFF; font-family:Arial; font-size:20px; font-weight:normal; line-height:100%; padding:10px 27px; text-align:center;}
-            .buttonContent a{color:#FFFFFF; display:block; text-decoration:none;}
-
-                        /*////// FRAMEWORK STYLES //////*/
-            .flexibleContainerCell{ padding-right:20px; padding-left:20px;}
-            .flexibleImage{height:auto;}
-            .bottomShim{padding-bottom:20px; padding-top: 20px;}
-
-
-
-            /* ========== Footer Styles ========== */
-
-            /**
-            * @tab Footer
-            * @section footer style
-            * @tip Set the background color and borders for your email's footer area.
-            * @theme footer
-            */
-            #templateFooter{
-                /*@editable*/ background-color:#212121;
-
-            }
-
-            /**
-            * @tab Footer
-            * @section footer contact text
-            * @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
-            * @theme footer
-            */
-            .preFooterContent{
-                /*@editable*/ color:#F8F8F8;
-                /*@editable*/ font-family:Arial;
-                /*@editable*/ font-size:16px;
-                /*@editable*/ line-height:24px;
-                padding-top:26px;
-                padding-right:20px;
-                padding-bottom:10px;
-                padding-left:20px;
-                /*@editable*/ text-align:left;
-            }
-
-            /**
-            * @tab Footer
-            * @section footer text
-            * @tip Set the styling for your email's social buttons.
-            * @theme footer
-            */
-            .socialFooterContent{
-                /*@editable*/ color:#F8F8F8;
-                /*@editable*/ font-family:Arial;
-                /*@editable*/ font-size:16px;
-                /*@editable*/ line-height:24px;
-                /*padding-top:20px;*/
-                padding-right:20px;
-                padding-bottom:22px;
-                padding-left:20px;
-                /*@editable*/ text-align:left;
-            }
-            .socialFooterContent img {
-                padding-right: 20px;
-                padding-top: 10px;
-                height: 20px;
-            }
-
-            .footer-button {
-                font-size: 14px;
-            }
-
-            /**
-            * @tab Footer
-            * @section footer text
-            * @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
-            * @theme footer
-            */
-            .footerContent{
-                /*@editable*/ color:#F8F8F8;
-                /*@editable*/ font-family:Arial;
-                /*@editable*/ font-size:14px;
-                /*@editable*/ line-height:20px;
-                padding-top:20px;
-                padding-right:20px;
-                padding-bottom:20px;
-                padding-left:20px;
-                /*@editable*/ text-align:left;
-            }
-
-            /**
-            * @tab Footer
-            * @section footer link
-            * @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
-            */
-            .footerContent a:link, .preFooterContent a:link, .socialFooterContent a:link, .footerContent a:visited, .preFooterContent a:visited, .socialFooterContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{
-                /*@editable*/ color:#F8F8F8;
-                /*@editable*/ font-weight:normal;
-            }
-            .preFooterContent a:link, .socialFooterContent a:link {
-                text-decoration: none;
-            }
-            .footerContent a:link, .footerContent a:visited, .footerContent a .yshortcuts, .footerContent a span {
-                text-decoration: underline;
-            }
-            .preference-text {
-                    display: none;
-                }
-            .preference-button {
-                display: inline-block;
-            }
-
-            /* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
-
-            @media only screen and (max-width: 600px){
-                /* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
-                body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:none !important;} /* Prevent Webkit platforms from changing default text sizes */
-                body{width:100% !important; min-width:100% !important;} /* Prevent iOS Mail from adding padding to the body */
-
-                /* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
-                #bodyCell{padding:10px !important;}
-
-                /*////// FRAMEWORK STYLES //////*/
-                /*
-                    CSS selectors are written in attribute
-                    selector format to prevent Yahoo Mail
-                    from rendering media query styles on
-                    desktop.
-                */
-                table[id="emailBody"], table[class="flexibleContainer"]{width:100% !important; /*border:0!important;*/}
-                
-
-                /*
-
-                /* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/\/ */
-
-                /* ======== Page Styles ======== */
-
-                /**
-                * @tab Mobile Styles
-                * @section template width
-                * @tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.
-                */
-                #templateContainer{
-                    max-width:600px !important;
-                    /*@editable*/ width:100% !important;
-                }
-                #templateBody{
-                font-size: 16px!important;
-                line-height: 22px!important;
-            }
-
-                /**
-                * @tab Mobile Styles
-                * @section heading 1
-                * @tip Make the first-level headings larger in size for better readability on small screens.
-                */
-                h1{
-                    /*@editable*/ font-size:24px !important;
-                    /*@editable*/ line-height:30px !important;
-                }
-
-                /**
-                * @tab Mobile Styles
-                * @section heading 2
-                * @tip Make the second-level headings larger in size for better readability on small screens.
-                */
-                h2{
-                    /*@editable*/ font-size:24px !important;
-                    /*@editable*/ line-height:30px !important;
-                }
-
-                /**
-                * @tab Mobile Styles
-                * @section heading 3
-                * @tip Make the third-level headings larger in size for better readability on small screens.
-                */
-                h3{
-                    /*@editable*/ font-size:18px !important;
-                    /*@editable*/ line-height:22px !important;
-                }
-
-                /**
-                * @tab Mobile Styles
-                * @section heading 4
-                * @tip Make the fourth-level headings larger in size for better readability on small screens.
-                */
-                h4{
-                    /*@editable*/ font-size:16px !important;
-                    /*@editable*/ line-height:20px !important;
-                }
-
-                /* ======== Header Styles ======== */
-
-
-                /**
-                * @tab Mobile Styles
-                * @section header text
-                * @tip Make the header content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
-                */
-                .headerContent{
-                    /*@editable*/ font-size:20px !important;
-                    /*@editable*/ line-height:125% !important;
-                }
-
-                /* ======== Body Styles ======== */
-
-                /**
-                * @tab Mobile Styles
-                * @section body text
-                * @tip Make the body content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
-                */
-                .bodyContent{
-                    /*@editable*/ font-size:16px !important;
-                    /*@editable*/ line-height:24px!important;
-                }
-
-                .imageContentLast {
-                padding-top: 20px;
-                }
-
-                table[class="emailButton"]{
-                    /*width:100% !important;*/
-                }
-
-
-                img[class="flexibleImage"]{height:auto !important; width:100% !important;}
-
-
-                /* ======== Column Styles ======== */
-
-                .templateColumnContainer{display:block !important; width:100% !important; padding-left: 0; padding-right:0;}
-                .constrain-columns {
-                    padding-left: 20px!important;
-                    padding-right: 20px!important;
-                    padding-top: 20px;
-
-                }
-
-                /**
-                * @tab Mobile Styles
-                * @section column image
-                * @tip Make the column image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
-                */
-                .columnImage{
-                    height:auto !important;
-                    /*@editable*/ max-width:100% !important;
-                    /*@editable*/ width:100% !important;
-                }
-
-                .bodycolumn01 {
-                    padding-bottom: 20px!important;
-                }
-
-                #blog-post-container h3{
-                /*@editable*/margin-top: 15px!important;
-                }
-
-
-                /* ======== Footer Styles ======== */
-
-                /**
-                * @tab Mobile Styles
-                * @section footer text
-                * @tip Make the body content text larger in size for better readability on small screens.
-                */
-                .footerContent{
-                    /*@editable*/ font-size:14px !important;
-                    /*@editable*/ line-height:20px !important;
-                }
-                .footer-button {
-                font-size: 12px;
-                }
-                .preference-text {
-                    display: inline!important;
-                }
-                .preference-button {
-                    display: none!important;
-                }
-
-                /*.footerContent a{display:block !important;} */
-                /* Place footer social and utility links on their own lines, for easier access */
-            }
-        </style>
-    </head>
+        
+    <style type="text/css">
+		#outlook a{
+			padding:0;
+		}
+		.ReadMsgBody{
+			width:100%;
+		}
+		.ExternalClass{
+			width:100%;
+		}
+		.ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalClass div{
+			line-height:100%;
+		}
+		body,table,td,p,a,li,blockquote{
+			-webkit-text-size-adjust:100%;
+			-ms-text-size-adjust:100%;
+		}
+		table,td{
+			mso-table-lspace:0pt;
+			mso-table-rspace:0pt;
+		}
+		img{
+			-ms-interpolation-mode:bicubic;
+		}
+		body{
+			margin:0;
+			padding:0;
+		}
+		img{
+			border:0;
+			height:auto;
+			line-height:100%;
+			outline:none;
+			text-decoration:none;
+		}
+		table{
+			border-collapse:collapse !important;
+		}
+		body,#bodyTable,#bodyCell{
+			height:100% !important;
+			margin:0;
+			padding:0;
+			width:100% !important;
+		}
+		#bodyCell{
+			padding:20px;
+		}
+		#templateContainer{
+			width:600px;
+		}
+	/*
+	@tab Page
+	@section background style
+	@tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+	@theme page
+	*/
+		body,#bodyTable{
+			/*@editable*/background-color:#DEE0E2;
+		}
+	/*
+	@tab Page
+	@section heading 1
+	@tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+	@style heading 1
+	*/
+		h1{
+			/*@editable*/color:#202020 !important;
+			display:block;
+			/*@editable*/font-family:Georgia;
+			/*@editable*/font-size:24px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:40px;
+			/*@editable*/letter-spacing:normal;
+			margin-top:10px;
+			margin-right:0;
+			margin-bottom:70px;
+			margin-left:0;
+			/*@editable*/text-align:center;
+		}
+	/*
+	@tab Page
+	@section heading 2
+	@tip Set the styling for all second-level headings in your emails.
+	@style heading 2
+	*/
+		h2{
+			/*@editable*/color:#202020;
+			display:block;
+			/*@editable*/font-family:Georgia;
+			/*@editable*/font-size:24px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:30px;
+			/*@editable*/letter-spacing:normal;
+			margin-top:0;
+			margin-bottom:0;
+			/*@editable*/text-align:center;
+		}
+	/*
+	@tab Page
+	@section heading 3
+	@tip Set the styling for all third-level headings in your emails.
+	@style heading 3
+	*/
+		h3{
+			/*@editable*/color:#212121;
+			display:block;
+			/*@editable*/font-family:Georgia;
+			/*@editable*/font-size:18px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:22px;
+			/*@editable*/letter-spacing:normal;
+			margin-top:20px;
+			margin-right:0;
+			margin-bottom:15px;
+			margin-left:0;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section heading 4
+	@tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+	@style heading 4
+	*/
+		h4{
+			/*@editable*/color:#F8F8F8;
+			display:block;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:10px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:100%;
+			/*@editable*/letter-spacing:normal;
+			/*@editable*/text-transform:uppercase;
+			margin-top:20px;
+			margin-right:0;
+			margin-bottom:5px;
+			margin-left:20px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Header
+	@section preheader style
+	@tip Set the background color and bottom border for your email's preheader area.
+	@theme header
+	*/
+		#templatePreheader{
+			/*@editable*/background-color:#F4F4F4;
+		}
+	/*
+	@tab Header
+	@section preheader text
+	@tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
+	*/
+		.preheaderContent{
+			/*@editable*/color:#808080;
+			/*@editable*/font-family:Arial;
+			font-size:12px;
+			/*@editable*/line-height:125%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Header
+	@section preheader link
+	@tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
+	*/
+		.preheaderContent a:link,.preheaderContent a:visited,.preheaderContent a .yshortcuts{
+			/*@editable*/color:#606060;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+		.navbar{
+			font-family:Arial;
+			font-size:14px;
+			color:#212121;
+		}
+		.navbar a:link,.navbar a:visited,.navbar a .yshortcuts,.navbar a span{
+			font-family:Arial;
+			font-size:14px;
+			font-weight:bold;
+			color:#212121;
+			text-decoration:underline;
+			-webkit-text-decoration-color:#FC1D42;
+		}
+	/*
+	@tab Header
+	@section header style
+	@tip Set the background color and borders for your email's header area.
+	@theme header
+	*/
+		#templateHeader{
+			/*@editable*/background-color:#F4F4F4;
+			/*@editable*/border-top:1px solid #FFFFFF;
+		}
+	/*
+	@tab Header
+	@section header text
+	@tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+	*/
+		.headerContent{
+			/*@editable*/color:#505050;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:20px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:100%;
+			/*@editable*/padding-top:0;
+			/*@editable*/padding-right:0;
+			/*@editable*/padding-bottom:0;
+			/*@editable*/padding-left:0;
+			/*@editable*/text-align:left;
+			/*@editable*/vertical-align:middle;
+		}
+	/*
+	@tab Body
+	@section body style
+	@tip Set the background color and borders for your email's body area.
+	*/
+		#templateBody{
+			/*@editable*/background-color:#F4F4F4;
+			font-family:Arial;
+			font-size:12px;
+			line-height:18px;
+		}
+		#templateBody a:link,#templateBody a,#templateBody a:visited,#templateBody a .yshortcuts{
+			text-decoration:none;
+			color:inherit;
+		}
+	/*
+	@tab Body
+	@section body text
+	@tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+	@theme main
+	*/
+		.bodyContent{
+			/*@editable*/color:#505050;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:16px;
+			/*@editable*/line-height:24px;
+			padding-top:25px;
+			padding-right:20px;
+			padding-bottom:0;
+			padding-left:20px;
+			/*@editable*/text-align:center;
+		}
+	/*
+	@tab Body
+	@section body headers
+	@tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+	@theme main
+	*/
+		.bodyContent h2{
+			/*@editable*/font-family:Arial;
+			/*@editable*/color:#FC1D42;
+			/*@editable*/font-size:18px;
+			/*@editable*/margin-bottom:30px;
+			line-height:normal;
+		}
+		.bodyContent h1{
+			margin-bottom:20px;
+			margin-top:0;
+			line-height:normal;
+		}
+	/*
+	@tab Body
+	@section body link
+	@tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+	*/
+		.bodyContent a:link,.bodyContent a:visited,.bodyContent a .yshortcuts{
+			/*@editable*/color:#EB4102;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+		.bodyContent img{
+			display:inline;
+			height:auto;
+			max-width:560px;
+		}
+		.bodyContent2 a:link,.bodyContent2 a,.bodyContent2 a:visited,.bodyContent2 a .yshortcuts{
+			text-decoration:none;
+			color:inherit;
+		}
+	/*
+	@tab Body
+	@section body content
+	@tip Set the background color of the content tables
+	*/
+		.content-table{
+			/*@editable*/background-color:#212121;
+			text-align:center;
+		}
+	/*
+	@tab Body
+	@section blog headings
+	@tip Change the headers in the dark blog post area
+	*/
+		#blog-post-container{
+			/*@editable*/color:#f8f8f8;
+		}
+		#blog-post-container h3{
+			/*@editable*/color:#f8f8f8;
+			margin-top:0;
+		}
+		#three-column-container h4{
+			/*@editable*/color:#212121;
+			margin-top:26px;
+			margin-bottom:0;
+		}
+		.bottom-banner h2{
+			/*@editable*/color:#f8f8f8;
+		}
+		.templateColumnContainer{
+			width:33.3%;
+			padding:0 5px 20px 5px;
+		}
+		#templateColumns h3{
+			margin-top:0;
+			font-size:14px;
+			line-height:16px;
+		}
+		.constrain-columns{
+			padding-left:15px;
+			padding-right:15px;
+			padding-top:20px;
+		}
+		.emailButton{
+			/*@editable*/background-color:#FC1D42;
+			border-collapse:separate;
+		}
+		.buttonContent{
+			color:#FFFFFF;
+			font-family:Arial;
+			font-size:20px;
+			font-weight:normal;
+			line-height:100%;
+			padding:10px 27px;
+			text-align:center;
+		}
+		.buttonContent a{
+			color:#FFFFFF;
+			display:block;
+			text-decoration:none;
+		}
+		.flexibleContainerCell{
+			padding-right:20px;
+			padding-left:20px;
+		}
+		.flexibleImage{
+			height:auto;
+		}
+		.bottomShim{
+			padding-bottom:20px;
+			padding-top:20px;
+		}
+	/*
+	@tab Footer
+	@section footer style
+	@tip Set the background color and borders for your email's footer area.
+	@theme footer
+	*/
+		#templateFooter{
+			/*@editable*/background-color:#212121;
+		}
+	/*
+	@tab Footer
+	@section footer contact text
+	@tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+	@theme footer
+	*/
+		.preFooterContent{
+			/*@editable*/color:#F8F8F8;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:16px;
+			/*@editable*/line-height:24px;
+			padding-top:26px;
+			padding-right:20px;
+			padding-bottom:10px;
+			padding-left:20px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Footer
+	@section footer text
+	@tip Set the styling for your email's social buttons.
+	@theme footer
+	*/
+		.socialFooterContent{
+			/*@editable*/color:#F8F8F8;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:16px;
+			/*@editable*/line-height:24px;
+			padding-right:20px;
+			padding-bottom:22px;
+			padding-left:20px;
+			/*@editable*/text-align:left;
+		}
+		.socialFooterContent img{
+			padding-right:20px;
+			padding-top:10px;
+			height:20px;
+		}
+		.footer-button{
+			font-size:14px;
+		}
+	/*
+	@tab Footer
+	@section footer text
+	@tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+	@theme footer
+	*/
+		.footerContent{
+			/*@editable*/color:#F8F8F8;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:14px;
+			/*@editable*/line-height:20px;
+			padding-top:20px;
+			padding-right:20px;
+			padding-bottom:20px;
+			padding-left:20px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Footer
+	@section footer link
+	@tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+	*/
+		.footerContent a:link,.preFooterContent a:link,.socialFooterContent a:link,.footerContent a:visited,.preFooterContent a:visited,.socialFooterContent a:visited,.footerContent a .yshortcuts,.footerContent a span{
+			/*@editable*/color:#F8F8F8;
+			/*@editable*/font-weight:normal;
+		}
+		.preFooterContent a:link,.socialFooterContent a:link{
+			text-decoration:none;
+		}
+		.footerContent a:link,.footerContent a:visited,.footerContent a .yshortcuts,.footerContent a span{
+			text-decoration:underline;
+		}
+		.preference-text{
+			display:none;
+		}
+		.preference-button{
+			display:inline-block;
+		}
+	@media only screen and (max-width: 600px){
+		body,table,td,p,a,li,blockquote{
+			-webkit-text-size-adjust:none !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		body{
+			width:100% !important;
+			min-width:100% !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		#bodyCell{
+			padding:10px !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		table[id=emailBody],table[class=flexibleContainer]{
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+	/*
+	@tab Mobile Styles
+	@section template width
+	@tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.
+	*/
+		#templateContainer{
+			/*@tab Mobile Styles
+@section template width
+@tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.*/max-width:600px !important;
+			/*@editable*/width:100% !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		#templateBody{
+			font-size:16px!important;
+			line-height:22px!important;
+		}
+
+}	@media only screen and (max-width: 600px){
+	/*
+	@tab Mobile Styles
+	@section heading 1
+	@tip Make the first-level headings larger in size for better readability on small screens.
+	*/
+		h1{
+			/*@editable*/font-size:24px !important;
+			/*@editable*/line-height:30px !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+	/*
+	@tab Mobile Styles
+	@section heading 2
+	@tip Make the second-level headings larger in size for better readability on small screens.
+	*/
+		h2{
+			/*@editable*/font-size:24px !important;
+			/*@editable*/line-height:30px !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+	/*
+	@tab Mobile Styles
+	@section heading 3
+	@tip Make the third-level headings larger in size for better readability on small screens.
+	*/
+		h3{
+			/*@editable*/font-size:18px !important;
+			/*@editable*/line-height:22px !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+	/*
+	@tab Mobile Styles
+	@section heading 4
+	@tip Make the fourth-level headings larger in size for better readability on small screens.
+	*/
+		h4{
+			/*@editable*/font-size:16px !important;
+			/*@editable*/line-height:20px !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+	/*
+	@tab Mobile Styles
+	@section header text
+	@tip Make the header content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+	*/
+		.headerContent{
+			/*@editable*/font-size:20px !important;
+			/*@editable*/line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+	/*
+	@tab Mobile Styles
+	@section body text
+	@tip Make the body content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+	*/
+		.bodyContent{
+			/*@editable*/font-size:16px !important;
+			/*@editable*/line-height:24px!important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.imageContentLast{
+			padding-top:20px;
+		}
+
+}	@media only screen and (max-width: 600px){
+		img[class=flexibleImage]{
+			height:auto !important;
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.templateColumnContainer{
+			display:block !important;
+			width:100% !important;
+			padding-left:0;
+			padding-right:0;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.constrain-columns{
+			padding-left:20px!important;
+			padding-right:20px!important;
+			padding-top:20px;
+		}
+
+}	@media only screen and (max-width: 600px){
+	/*
+	@tab Mobile Styles
+	@section column image
+	@tip Make the column image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+	*/
+		.columnImage{
+			/*@tab Mobile Styles
+@section column image
+@tip Make the column image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.*/height:auto !important;
+			/*@editable*/max-width:100% !important;
+			/*@editable*/width:100% !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.bodycolumn01{
+			padding-bottom:20px!important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		#blog-post-container h3{
+			/*@editable*/margin-top:15px!important;
+		}
+
+}	@media only screen and (max-width: 600px){
+	/*
+	@tab Mobile Styles
+	@section footer text
+	@tip Make the body content text larger in size for better readability on small screens.
+	*/
+		.footerContent{
+			/*@editable*/font-size:14px !important;
+			/*@editable*/line-height:20px !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.footer-button{
+			font-size:12px;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.preference-text{
+			display:inline!important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.preference-button{
+			display:none!important;
+		}
+
+}</style></head>
 
     <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
         <center>
@@ -677,9 +658,9 @@
                                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" id="header-navbar">
                                                     <tr>
                                                         <td valign="top" class="navbar" style="">
-                                                            <a href="https://red-badger.com/about-us/" target=_"blank">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                                            <a href="https://red-badger.com/what-we-do/" target=_"blank">What We Do</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                                            <a href="https://red-badger.com/blog/" target=_"blank">Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            <a href="https://red-badger.com/about-us/" target="_&quot;blank&quot;">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            <a href="https://red-badger.com/what-we-do/" target="_&quot;blank&quot;">What We Do</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            <a href="https://red-badger.com/blog/" target="_&quot;blank&quot;">Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -696,7 +677,7 @@
                                     <!-- BEGIN BODY // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
                                         <tr>
-                                            <td valign="top" class="bodyContent" mc:edit="body-content">
+                                            <td valign="top" class="bodyContent" mc:edit="bodycontent">
                                                 <h2>#BadgerNews</h2>
                                                 <h1>Serverless &mdash; is it hype or a real thing?</h1>
                                             </td>
@@ -723,7 +704,7 @@
                                                                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                                             <tr>
                                                                                 <td valign="top" class="imageContent">
-                                                                                    <img src="https://gallery.mailchimp.com/0ab76cd515/images/3c966329-41eb-4590-86a9-f49be6e1aab7.png" width="560" class="flexibleImage" style="max-width:560px;" mc:edit="headline" />
+                                                                                    <img src="https://gallery.mailchimp.com/0ab76cd515/images/3c966329-41eb-4590-86a9-f49be6e1aab7.png" width="560" class="flexibleImage" style="max-width:560px;" mc:edit="headline">
                                                                                 </td>
                                                                             </tr>
                                                                         </table>
@@ -743,7 +724,7 @@
                                         <!-- // MODULE ROW -->
 
                                         <!-- MODULE ROW // -->
-                                        <tr mc:repeatable="lead-text" mc:variant="two column">
+                                        <tr>
                                             <td align="center" valign="top" style="padding: 0 0 20px 0;">
                                                 <!-- CENTERING TABLE // -->
                                                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -775,47 +756,13 @@
                                                                         <!-- CONTENT TABLE // -->
                                                                         <table align="Right" border="0" cellpadding="0" cellspacing="0" width="260" class="flexibleContainer">
                                                                             <tr>
-                                                                                <td valign="top" mc:edit="body-column-02">
+                                                                                <td valign="top" mc:edit="bodycolumn02">
                                                                                     <h3>Strategy in San Fransisco &nbsp;<img src="https://gallery.mailchimp.com/0ab76cd515/images/bd1296c0-c59a-4d81-9fa4-c07be8ce6b16.png" width="13px" alt="arrow points right"></h3>A kitten or kitty is a juvenile domesticated cat. A feline litter usually consists of two to five kittens. To survive, kittens need the care of their mother for the first several weeks of their life. Kittens are highly social animals and spend most of their waking hours playing and interacting with available companions.
                                                                                 </td>
                                                                             </tr>
                                                                         </table>
                                                                         <!-- // CONTENT TABLE -->
 
-
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                            <!-- // FLEXIBLE CONTAINER -->
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <!-- // CENTERING TABLE -->
-                                            </td>
-                                        </tr>
-                                        <!-- // MODULE ROW -->
-                                        <!-- MODULE ROW // -->
-                                        <tr mc:repeatable="lead-text" mc:variant="one column">
-                                            <td align="center" valign="top" style="padding: 0 0 20px 0;">
-                                                <!-- CENTERING TABLE // -->
-                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                    <tr>
-                                                        <td align="center" valign="top">
-                                                            <!-- FLEXIBLE CONTAINER // -->
-                                                            <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
-                                                                <tr>
-                                                                    <td valign="top" width="600" class="flexibleContainerCell">
-
-
-                                                                        <!-- CONTENT TABLE // -->
-                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="flexibleContainer">
-                                                                            <tr>
-                                                                                <td valign="top" mc:edit="bodycolumn01" class="bodycolumn01">
-                                                                                    <h3><a href="">Do I really have to stand? An Agile Glossary &nbsp;<img src="https://gallery.mailchimp.com/0ab76cd515/images/bd1296c0-c59a-4d81-9fa4-c07be8ce6b16.png" width="13px" alt="arrow points right"></a></h3>A kitten or kitty is a juvenile domesticated cat. A feline litter usually consists of two to five kittens. To survive, kittens need the care of their mother for the first several weeks of their life. Kittens are highly social animals and spend most of their waking hours playing and interacting with available companions.
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                        <!-- // CONTENT TABLE -->
 
                                                                     </td>
                                                                 </tr>
@@ -912,7 +859,7 @@
                                                                                                 <table align="Right" border="0" cellpadding="0" cellspacing="0" width="133" class="flexibleContainer">
                                                                                                     <tr>
                                                                                                         <td align="Left" valign="top" class="imageContent">
-                                                                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Yellow_rectangle.svg/2000px-Yellow_rectangle.svg.png" width="133" class="columnImage" style="max-width:133px;" mc:edit="blogimage"/>
+                                                                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Yellow_rectangle.svg/2000px-Yellow_rectangle.svg.png" width="133" class="columnImage" style="max-width:133px;" mc:edit="blogimage">
                                                                                                         </td>
                                                                                                     </tr>
                                                                                                 </table>
@@ -955,7 +902,7 @@
                                                                                 <td align="center" valign="top" style="padding-left: 19px; padding-right: 21px;">
                                                                                     <!-- FLEXIBLE CONTAINER // -->
                                                                                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                                                        <tr >
+                                                                                        <tr>
                                                                                             <td align="center" valign="top" height="2px">
                                                                                             <div style="border-bottom: 2px solid #565656;"></div>
                                                                                             </td>
@@ -1077,15 +1024,15 @@
                                                                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                                             <tr>
                                                                                 <td class="leftColumnContent" style="">
-                                                                                    <img src="https://gallery.mailchimp.com/0ab76cd515/images/0951ff56-c3cc-4246-bf48-f0cadde4c3e6.png" style="width:100%;max-width:180px;padding-bottom:15px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+                                                                                    <img src="https://gallery.mailchimp.com/0ab76cd515/images/0951ff56-c3cc-4246-bf48-f0cadde4c3e6.png" style="width:100%;max-width:180px;padding-bottom:15px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image">
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td valign="top" class="leftColumnContent" mc:edit="left_column_content" style="">
+                                                                                <td valign="top" class="leftColumnContent" style="" mc:edit="left_column_content">
                                                                                     <h3>Front end London &nbsp;<img src="https://gallery.mailchimp.com/0ab76cd515/images/bd1296c0-c59a-4d81-9fa4-c07be8ce6b16.png" width="13px" alt="arrow points right"></h3>
                                                                                     <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                                                    <br />
-                                                                                    <br />
+                                                                                    <br>
+                                                                                    <br>
                                                                                     You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
                                                                                 </td>
                                                                             </tr>
@@ -1095,15 +1042,15 @@
                                                                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                                             <tr>
                                                                                 <td class="centerColumnContent" style="">
-                                                                                    <img src="https://gallery.mailchimp.com/0ab76cd515/images/bca75638-4623-49aa-b5c8-0f15b6f2f6cd.png" style="width:100%;max-width:180px;padding-bottom:15px;" class="columnImage" mc:label="center_column_image" mc:edit="center_column_image" />
+                                                                                    <img src="https://gallery.mailchimp.com/0ab76cd515/images/bca75638-4623-49aa-b5c8-0f15b6f2f6cd.png" style="width:100%;max-width:180px;padding-bottom:15px;" class="columnImage" mc:label="center_column_image" mc:edit="center_column_image">
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td valign="top" class="centerColumnContent" mc:edit="center_column_content" style="">
+                                                                                <td valign="top" class="centerColumnContent" style="" mc:edit="center_column_content">
                                                                                     <h3>Functional Programming &nbsp;<img src="https://gallery.mailchimp.com/0ab76cd515/images/bd1296c0-c59a-4d81-9fa4-c07be8ce6b16.png" width="13px" alt="arrow points right"></h3>
                                                                                     <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                                                    <br />
-                                                                                    <br />
+                                                                                    <br>
+                                                                                    <br>
                                                                                     You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
                                                                                 </td>
                                                                             </tr>
@@ -1112,16 +1059,16 @@
                                                                     <td align="center" valign="top" class="templateColumnContainer" style="">
                                                                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                                             <tr>
-                                                                                <td class="rightColumnContent" >
-                                                                                    <img src="https://gallery.mailchimp.com/0ab76cd515/images/95ffc0e7-cad2-45ea-9f3e-00ae0b189208.png" style="width:100%;max-width:180px;padding-bottom:15px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
+                                                                                <td class="rightColumnContent">
+                                                                                    <img src="https://gallery.mailchimp.com/0ab76cd515/images/95ffc0e7-cad2-45ea-9f3e-00ae0b189208.png" style="width:100%;max-width:180px;padding-bottom:15px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image">
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td valign="top" class="rightColumnContent" mc:edit="right_column_content" style="">
+                                                                                <td valign="top" class="rightColumnContent" style="" mc:edit="right_column_content">
                                                                                     <h3>Service Experience Camp &nbsp;<img src="https://gallery.mailchimp.com/0ab76cd515/images/bd1296c0-c59a-4d81-9fa4-c07be8ce6b16.png" width="13px" alt="arrow points right"></h3>
                                                                                     <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                                                    <br />
-                                                                                    <br />
+                                                                                    <br>
+                                                                                    <br>
                                                                                     You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
                                                                                 </td>
                                                                             </tr>
@@ -1236,7 +1183,7 @@
                                         </tr>
                                         <tr colspan="2">
                                             <td valign="top" colspan="2" class="socialFooterContent">
-                                                <a href="https://twitter.com/redbadgerteam?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="https://gallery.mailchimp.com/0ab76cd515/images/74e995b3-3fd7-4ca3-9e1d-6c112823f261.png" class="socialIcon" ></a><a href="https://www.linkedin.com/company/red-badger"><img src="https://gallery.mailchimp.com/0ab76cd515/images/deea1c07-870f-46e7-a775-64ce8df86522.png" class="socialIcon"></a><a href="https://www.instagram.com/redbadgerteam/?hl=en"><img src="https://gallery.mailchimp.com/0ab76cd515/images/3c2ab674-bbc4-491d-979f-6e4b9a7a9acc.png" class="socialIcon"></a><a href="https://www.facebook.com/RedBadger/"><img src="https://gallery.mailchimp.com/0ab76cd515/images/54e4a5f5-03d6-43dd-bdf3-568011643166.png" class="socialIcon"></a><a href="https://www.youtube.com/channel/UCHlIVrJki1BxwKe7NtFYZRg"><img src="https://gallery.mailchimp.com/0ab76cd515/images/897fc07a-191f-43af-9d0d-445b25a93744.png" class="socialIcon"></a><a href="https://plus.google.com/+Redbadgerteam"><img src="https://gallery.mailchimp.com/0ab76cd515/images/9884262e-90c3-4828-9f75-52b8be200416.png" class="socialIcon"></a>
+                                                <a href="https://twitter.com/redbadgerteam?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="https://gallery.mailchimp.com/0ab76cd515/images/74e995b3-3fd7-4ca3-9e1d-6c112823f261.png" class="socialIcon"></a><a href="https://www.linkedin.com/company/red-badger"><img src="https://gallery.mailchimp.com/0ab76cd515/images/deea1c07-870f-46e7-a775-64ce8df86522.png" class="socialIcon"></a><a href="https://www.instagram.com/redbadgerteam/?hl=en"><img src="https://gallery.mailchimp.com/0ab76cd515/images/3c2ab674-bbc4-491d-979f-6e4b9a7a9acc.png" class="socialIcon"></a><a href="https://www.facebook.com/RedBadger/"><img src="https://gallery.mailchimp.com/0ab76cd515/images/54e4a5f5-03d6-43dd-bdf3-568011643166.png" class="socialIcon"></a><a href="https://www.youtube.com/channel/UCHlIVrJki1BxwKe7NtFYZRg"><img src="https://gallery.mailchimp.com/0ab76cd515/images/897fc07a-191f-43af-9d0d-445b25a93744.png" class="socialIcon"></a><a href="https://plus.google.com/+Redbadgerteam"><img src="https://gallery.mailchimp.com/0ab76cd515/images/9884262e-90c3-4828-9f75-52b8be200416.png" class="socialIcon"></a>
                                             </td>
                                         </tr>
                                         <tr colspan="2">
@@ -1271,7 +1218,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="left" valign="top" class="footerContent" style="padding-top: 0; padding-bottom:30px;" >
+                                                        <td align="left" valign="top" class="footerContent" style="padding-top: 0; padding-bottom:30px;">
                                                             <p class="preference-text"> You can update your <a href="*|UPDATE_PROFILE|*">preferences here.</a></p> You can <a href="*|UNSUB|*">unsubscribe here.</a>
                                                         </td>
                                                         <td align="right" style="padding-bottom:30px; padding-right:20px;">
