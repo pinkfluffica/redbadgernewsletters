@@ -64,14 +64,14 @@
                 /*@editable*/ color:#202020 !important;
                 display:block;
                 /*@editable*/ font-family:Georgia;
-                /*@editable*/ font-size:36px;
+                /*@editable*/ font-size:30px;
                 /*@editable*/ font-style:normal;
                 /*@editable*/ font-weight:bold;
-                /*@editable*/ line-height:40px;
+                /*@editable*/ line-height:33px;
                 /*@editable*/ letter-spacing:normal;
-                margin-top:10px;
+                margin-top:0;
                 margin-right:0;
-                margin-bottom:70px;
+                margin-bottom:20px;
                 margin-left:0;
                 /*@editable*/ text-align:left;
             }
@@ -83,17 +83,17 @@
             * @style heading 2
             */
             h2{
-                /*@editable*/ color:#f8f8f8 !important;
+                /*@editable*/ color:#F8F8F8;
                 display:block;
                 /*@editable*/ font-family:Georgia;
                 /*@editable*/ font-size:24px;
                 /*@editable*/ font-style:normal;
-                /*@editable*/ font-weight:bold;
+                /*@editable*/ font-weight:normal;
                 /*@editable*/ line-height:30px;
                 /*@editable*/ letter-spacing:normal;
                 margin-top:0;
                 /*margin-right:0;*/
-                margin-bottom:0;
+                margin-bottom:40px;
                 /*margin-left:0;*/
                 /*@editable*/ text-align:center;
             }
@@ -105,19 +105,19 @@
             * @style heading 3
             */
             h3{
-                /*@editable*/ color:#606060 !important;
+                /*@editable*/ color:#212121;
                 display:block;
                 /*@editable*/ font-family:Georgia;
-                /*@editable*/ font-size:16px;
-                /*@editable*/ font-style:italic;
+                /*@editable*/ font-size:18px;
+                /*@editable*/ font-style:normal;
                 /*@editable*/ font-weight:bold;
-                /*@editable*/ line-height:100%;
+                /*@editable*/ line-height:22px;
                 /*@editable*/ letter-spacing:normal;
-                margin-top:0;
+                margin-top:20px;
                 margin-right:0;
-                margin-bottom:10px;
+                margin-bottom:15px;
                 margin-left:0;
-                /*@editable*/ text-align:center;
+                /*@editable*/ text-align:left;
             }
 
             /**
@@ -127,18 +127,20 @@
             * @style heading 4
             */
             h4{
-                /*@editable*/ color:#808080 !important;
+                /*@editable*/ color:#808080;
                 display:block;
-                /*@editable*/ font-family:Georgia;
-                /*@editable*/ font-size:14px;
-                /*@editable*/ font-style:italic;
+                /*@editable*/ font-family:Arial;
+                /*@editable*/ font-size:10px;
+                /*@editable*/ font-style:normal;
                 /*@editable*/ font-weight:bold;
                 /*@editable*/ line-height:100%;
                 /*@editable*/ letter-spacing:normal;
-                margin-top:0;
+                /*@editable*/ text-transform: uppercase;
+                /*@editable*/ color: #F8F8F8;
+                margin-top:20px;
                 margin-right:0;
-                margin-bottom:10px;
-                margin-left:0;
+                margin-bottom:5px;
+                margin-left:20px;
                 /*@editable*/ text-align:left;
             }
 
@@ -153,6 +155,7 @@
             #templatePreheader{
                 /*@editable*/ background-color:#F4F4F4;
             }
+
 
             /**
             * @tab Header
@@ -178,6 +181,21 @@
                 /*@editable*/ text-decoration:underline;
             }
 
+            .navbar {
+                font-family: Arial;
+                font-size: 14px;
+                color: #212121;
+            }
+
+            .navbar a:link, .navbar a:visited, .navbar a .yshortcuts, .navbar a span {
+                font-family: Arial;
+                font-size: 14px;
+                font-weight: bold;
+                color: #212121;
+                text-decoration: underline;
+                -webkit-text-decoration-color: #FC1D42;
+            }
+
             /**
             * @tab Header
             * @section header style
@@ -190,24 +208,7 @@
 
             }
 
-            /**
-            * @tab Header
-            * @section header text
-            * @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
-            */
-            .headerContent{
-                /*@editable*/ color:#505050;
-                /*@editable*/ font-family:Arial;
-                /*@editable*/ font-size:20px;
-                /*@editable*/ font-weight:bold;
-                /*@editable*/ line-height:100%;
-                /*@editable*/ padding-top:0;
-                /*@editable*/ padding-right:0;
-                /*@editable*/ padding-bottom:0;
-                /*@editable*/ padding-left:0;
-                /*@editable*/ text-align:left;
-                /*@editable*/ vertical-align:middle;
-            }
+
 
 
 
@@ -221,6 +222,9 @@
             */
             #templateBody{
                 /*@editable*/ background-color:#F4F4F4;
+                font-family: Arial;
+                font-size: 12px;
+                line-height: 18px;
             }
             #templateBody a:link, #templateBody a, #templateBody a:visited, /* Yahoo! Mail Override */ #templateBody a .yshortcuts /* Yahoo! Mail Override */ {
                 text-decoration: none;
@@ -239,12 +243,19 @@
                 /*@editable*/ font-family:Arial;
                 /*@editable*/ font-size:16px;
                 /*@editable*/ line-height:24px;
-                padding-top:40px;
+                padding-top:37px;
                 padding-right:20px;
-                padding-bottom:0;
+                padding-bottom:40px;
                 padding-left:20px;
                 /*@editable*/ text-align:left;
             }
+
+            .bodyContent2 {
+                padding-top: 37px;
+                background-color: #212121;
+            }
+
+
 
             /**
             * @tab Body
@@ -257,16 +268,26 @@
                 /*@editable*/ text-decoration:underline;
             }
 
-            .bodyContent img{
-                display:inline;
-                height:auto;
-                max-width:560px;
-            }
 
             .bodyContent2 a:link, .bodyContent2 a, .bodyContent2 a:visited, /* Yahoo! Mail Override */ .bodyContent2 a .yshortcuts /* Yahoo! Mail Override */ {
                 text-decoration: none;
                 color: inherit;
             }
+
+            .desktop-image {
+                text-align: center;
+                padding-bottom: 30px;
+            }
+
+            .mobile-image {
+                text-align: center;
+                display: none;
+                padding-bottom: 30px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+
 
             /**
             * @tab Body
@@ -279,71 +300,6 @@
                 text-align: center;
             }
 
-            .textContent {
-                padding:0 8px;
-                min-height: 280px;
-            }
-
-            .foo {
-                border-left: 1px solid #565656;
-            }
-
-            .bar {
-                border-right: 1px solid #565656;
-            }
-
-            .flexibleContainer .flexibleContainer {
-                border-bottom: 2px solid #565656;
-            }
-            /**
-            * @tab Body
-            * @section body images
-            * @tip Set the height of the main images
-            */
-            .mainImage {
-                /*@editable*/height: 116px;
-            }
-            /**
-            * @tab Body
-            * @section logo image 1
-            * @tip Set the width and height of logo images
-            */
-            .logo1 {
-                /*@editable*/max-width: 270px;
-                /*@editable*/height: auto;
-            }
-             /**
-            * @tab Body
-            * @section logo image 2
-            * @tip Set the width and height of logo images
-            */
-            .logo2 {
-                /*@editable*/max-width: 270px;
-                /*@editable*/height: auto;
-            }
-            /**
-            * @tab Body
-            * @section logo image 3
-            * @tip Set the width and height of logo images
-            */
-            .logo3 {
-                /*@editable*/max-width: 270px;
-                /*@editable*/height: auto;
-            }
-            /**
-            * @tab Body
-            * @section logo image 4
-            * @tip Set the width and height of logo images
-            */
-            .logo4 {
-                /*@editable*/max-width: 270px ;
-                /*@editable*/height: auto;
-            }
-
-
-/*            .imageContentLast {
-                padding-top: 20px;
-            }*/
 
             /*================ General Styles ===============*/
             .emailButton{
@@ -356,7 +312,9 @@
                         /*////// FRAMEWORK STYLES //////*/
             .flexibleContainerCell{ padding-right:20px; padding-left:20px;}
             .flexibleImage{height:auto;}
-            .bottomShim{padding-bottom:20px;}
+            .bottomShim{padding-bottom:20px; padding-top: 20px;}
+
+
 
             /* ========== Footer Styles ========== */
 
@@ -474,6 +432,7 @@
                     desktop.
                 */
                 table[id="emailBody"], table[class="flexibleContainer"]{width:100% !important; /*border:0!important;*/}
+                
 
                 /*
 
@@ -493,7 +452,7 @@
                 #templateBody{
                 font-size: 14px;
                 line-height: 19px;
-                }
+            }
 
                 /**
                 * @tab Mobile Styles
@@ -501,8 +460,8 @@
                 * @tip Make the first-level headings larger in size for better readability on small screens.
                 */
                 h1{
-                    /*@editable*/ font-size:36px !important;
-                    /*@editable*/ line-height:40px !important;
+                    /*@editable*/ font-size:30px !important;
+                    /*@editable*/ line-height:33px !important;
                 }
 
                 /**
@@ -559,27 +518,20 @@
                     /*@editable*/ font-size:16px !important;
                     /*@editable*/ line-height:24px!important;
                 }
-
-                .imageContentLast {
-                padding-top: 20px;
+                .desktop-image {
+                display: none!important;
                 }
+                .mobile-image {
+                    display: block!important;
+                }
+
 
                 table[class="emailButton"]{
                     /*width:100% !important;*/
                 }
 
-                tr[class="bar"]{
-                    border-right: none!important;
-                }
-                tr[class="foo"] {
-                    border-left: none!important;
-                }
-                tr {
-                    border-left: none;
-                    border-right: none;
-                }
 
-
+                img[class="flexibleImage"]{height:auto !important; width:100% !important;}
 
 
                 /* ======== Footer Styles ======== */
@@ -621,28 +573,32 @@
                                     <!-- BEGIN PREHEADER // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
                                         <tr>
-                                            <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;">
+                                            <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:20px; padding-left:20px;">
                                                 <a href="https://www.red-badger.com"><img src="https://gallery.mailchimp.com/0ab76cd515/images/03d3d9b2-39d5-42b9-ad2e-397a19853b39.png" style="height: 35px;"></a>
                                             </td>
                                             <!-- *|IFNOT:ARCHIVE_PAGE|* -->
-                                            <td valign="top" width="140" class="preheaderContent" style="padding-top:20px; padding-right:20px; padding-bottom:20px; padding-left:0; text-align:right;">
+                                            <td valign="top" width="140" class="preheaderContent" style="padding-top:20px; padding-right:20px; padding-bottom:25px; padding-left:0; text-align:right;">
                                                 <a href="*|ARCHIVE|*" target="_blank">View in your browser</a>
                                             </td>
                                             <!-- *|END:IF|* -->
                                         </tr>
+
                                     </table>
                                     <!-- // END PREHEADER -->
                                 </td>
                             </tr>
+                            
                             <tr>
                                 <td align="center" valign="top">
                                     <!-- BEGIN BODY // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
                                         <tr>
-                                            <td valign="top" class="bodyContent" mc:edit="body-content">
-                                                <h1>We solve complex problems and deliver real impact.</h1>
+                                            <td valign="top" class="bodyContent" mc:edit="bodyContent">
+                                                <h1>We love tech but only use what is right for the job.</h1>Here is a selection of tools we've used on recent projects.
                                             </td>
                                         </tr>
+
+
                                         <!-- BEGIN DIAGONAL TAB -->
                                         <tr>
                                             <td align="center" valign="top">
@@ -665,132 +621,35 @@
                                             </td>
                                         </tr>
                                         <!-- END DIAGONAL TAB -->
-                                        <!-- MODULE ROW // -->
+                                        
                                     </table>
                                     <!-- // END BODY -->
                                 </td>
                             </tr>
-
                             <tr>
-                                <td align="center" valign="top">
+                                <td align="center" valign="top" class="bodyContent2">
                                     <!-- BEGIN BODY 2 // -->
 
-                                    <table style="background-color: #212121;">
+                                    <table style="">
+
                                         <tr>
-                                            <td align="center" valign="top" class="bodyContent2">
-                                                <!-- CENTERING TABLE // -->
-                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                    <tr>
-                                                        <td align="center" valign="top">
-                                                            <!-- FLEXIBLE CONTAINER // -->
-                                                            <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
-                                                                <!-- CONTENT ROW -->
-                                                                <tr>
-                                                                    <td valign="top" width="600" class="flexibleContainerCell content-table" style="padding-top:20px;">
-
-                                                                        <!-- CONTENT TABLE // -->
-                                                                        <table align="Left" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer" style="min-height: 318px">
-                                                                            <tr class="bar">
-                                                                                <td valign="top" class="mainImage" style="padding-top: 20px;">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/fortnum-and-mason/" target="_blank"><img src="https://gallery.mailchimp.com/0ab76cd515/images/bdc6a5ee-0892-4804-862a-f6f0ab73cee0.png" height="85" class="flexibleImage" style="max-width:125px;" mc:edit></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr class="bar">
-                                                                                <td valign="top" class="textContent" mc:edit="text-content01">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/fortnum-and-mason/" target="_blank"><h2>Number of awards for the new online store &nbsp;<img src="https://gallery.mailchimp.com/0ab76cd515/images/bd1296c0-c59a-4d81-9fa4-c07be8ce6b16.png" width="15px" alt="arrow points right"></h2></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr class="bar">
-                                                                                <td valign="top" class="imageContent">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/fortnum-and-mason/" target="_blank"><img src="https://gallery.mailchimp.com/0ab76cd515/images/e432c451-c4f8-4191-a6ba-a0413aa46e91.png" width="270" class="flexibleImage logo1" mc:edit></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                        <!-- // CONTENT TABLE -->
-
-                                                                        <!-- CONTENT TABLE // -->
-                                                                        <table align="Right" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer" style="min-height: 318px;">
-                                                                            <tr class="foo">
-                                                                                <td valign="top" class="mainImage" style="padding-top: 20px;">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/sky-cms" target="_blank"><img src="https://gallery.mailchimp.com/0ab76cd515/images/2555ebc0-0555-4c99-867c-99f2024309eb.png" height="85" class="flexibleImage" style="max-width:219px;" mc:edit></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr class="foo">
-                                                                                <td valign="top" class="textContent" mc:edit="text-content02">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/sky-cms" target="_blank"><h2>Drop in customers pressing 'need more help' button &nbsp;<img src="https://gallery.mailchimp.com/0ab76cd515/images/bd1296c0-c59a-4d81-9fa4-c07be8ce6b16.png" width="15px" alt="arrow points right"></h2></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr class="foo">
-                                                                                <td valign="top" class="imageContent">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/sky-cms" target="_blank"><img src="https://gallery.mailchimp.com/0ab76cd515/images/79ebe6f7-d2e1-48e7-b5df-ca1a09ec7f98.png" width="270" class="flexibleImage logo2" mc:edit></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                        <!-- // CONTENT TABLE -->
-
-                                                                    </td>
-                                                                </tr>
-                                                                <!-- // CONTENT ROW -->
-
-                                                                <!-- CONTENT ROW -->
-                                                                <tr>
-                                                                    <td valign="top" width="600" class="flexibleContainerCell content-table">
-
-                                                                        <!-- CONTENT TABLE // -->
-                                                                        <table align="Left" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer" style="min-height: 300px">
-                                                                            <tr class="bar">
-                                                                                <td valign="top" class="mainImage" style="padding-top:20px">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/financial-times/" target="_blank"><img src="https://gallery.mailchimp.com/0ab76cd515/images/7de81ecb-d2e8-408f-8b44-0664cf8367c8.png" height="85" class="flexibleImage" style="max-width:100px;" mc:edit></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr class="bar">
-                                                                                <td valign="top" class="textContent" mc:edit="text-content03">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/financial-times/" target="_blank"><h2>Weeks to redesign and redeliver MVP homepage &nbsp;<img src="https://gallery.mailchimp.com/0ab76cd515/images/bd1296c0-c59a-4d81-9fa4-c07be8ce6b16.png" width="15px" alt="arrow points right"></h2></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr class="bar">
-                                                                                <td valign="top" class="imageContent">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/financial-times/" target="_blank"><img src="https://gallery.mailchimp.com/0ab76cd515/images/41e71b92-9925-484e-8073-3675397d6d68.png" class="flexibleImage logo3" mc:edit></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                        <!-- // CONTENT TABLE -->
-
-
-                                                                        <!-- CONTENT TABLE // -->
-                                                                        <table align="Right" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer" style="min-height: 300px;">
-                                                                            <tr class="foo">
-                                                                                <td valign="top" class="mainImage imageContentLast" style="padding-top:20px;">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/camden-market" target="_blank"><img src="https://gallery.mailchimp.com/0ab76cd515/images/bd948725-4f18-4dc3-83a8-fbb1a853f6de.png" height="85" class="flexibleImage" style="max-width:210px;" mc:edit></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr class="foo">
-                                                                                <td valign="top" class="textContent" mc:edit="text-content04">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/camden-market" target="_blank"><h2>Reduction of bounce rate within 4 days of release &nbsp;<img src="https://gallery.mailchimp.com/0ab76cd515/images/bd1296c0-c59a-4d81-9fa4-c07be8ce6b16.png" width="15px" alt="arrow points right"></h2></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr class="foo">
-                                                                                <td valign="top" class="imageContent">
-                                                                                    <a href="https://red-badger.com/our-work/case-study/camden-market" target="_blank"><img src="https://gallery.mailchimp.com/0ab76cd515/images/4df37dca-dad4-4ae0-9a19-6eda802988bd.png" class="flexibleImage logo4" mc:edit></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                        <!-- // CONTENT TABLE -->
-
-                                                                    </td>
-                                                                </tr>
-                                                                <!-- // CONTENT ROW -->
-
-                                                            </table>
-                                                            <!-- // FLEXIBLE CONTAINER -->
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <!-- // CENTERING TABLE -->
+                                            <td valign="top" mc:edit="bodyContent2" mc:hideable>
+                                                <h2>We love tech but only use what is right for the job.</h2>
                                             </td>
                                         </tr>
-                                        <!-- // MODULE ROW -->
+                                        
 
+                                        
+
+                                        <tr>
+                                            <td valign="top" class="desktop-image">
+                                                <a href="https://red-badger.com/what-we-do/" target="_blank"><img src="https://gallery.mailchimp.com/0ab76cd515/images/13a1df90-b22d-46a1-a5af-d1942e3553b8.png" mc:edit="tech-image"></a>
+                                            </td>
+                                            <td valign="top" class="mobile-image">
+                                                <a href="https://red-badger.com/what-we-do/" target="_blank"><img src="https://gallery.mailchimp.com/0ab76cd515/images/f7db3c04-aac6-4a61-9076-2e354df80145.png" mc:edit="mobile-tech-image"></a>
+                                            </td>
+
+                                        </tr>
                                         <tr>
                                             <td align="center" valign="top">
                                                 <!-- CENTERING TABLE // -->
@@ -800,7 +659,7 @@
                                                             <!-- FLEXIBLE CONTAINER // -->
                                                             <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
                                                                 <tr>
-                                                                    <td align="center" valign="top" width="600" class="flexibleContainerCell bottomShim" style="padding-bottom: 35px; padding-top:30px; ">
+                                                                    <td align="center" valign="top" width="600" class="flexibleContainerCell bottomShim" style="padding-bottom: 30px; padding-top:30px; ">
 
                                                                         <!-- CONTENT TABLE // -->
                                                                         <!--
@@ -813,7 +672,7 @@
                                                                         <table border="0" cellpadding="0" cellspacing="0" width="" class="emailButton">
                                                                             <tr>
                                                                                 <td align="center" valign="middle" class="buttonContent">
-                                                                                    <a href="https://red-badger.com/our-work" target="_blank">See our work</a>
+                                                                                    <a href="https://red-badger.com/what-we-do/" target="_blank">What we do</a>
                                                                                 </td>
                                                                             </tr>
                                                                         </table>
@@ -838,9 +697,9 @@
                                                         <td align="center" valign="top" style="padding-left: 19px; padding-right: 21px;">
                                                             <!-- FLEXIBLE CONTAINER // -->
                                                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                                <tr style="border-bottom: 2px solid #565656;">
+                                                                <tr>
                                                                     <td align="center" valign="top" height="2px">
-                                                                    
+                                                                    <div style="border-bottom: 2px solid #565656;"></div>
                                                                     </td>
                                                                 </tr>
                                                             </table>
@@ -856,6 +715,7 @@
                                     <!-- // END BODY 2 -->
                                 </td>
                             </tr>
+
 
                             <tr>
                                 <td align="center" valign="top">

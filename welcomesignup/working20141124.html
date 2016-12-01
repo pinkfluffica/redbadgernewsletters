@@ -286,97 +286,94 @@
 		.bottomShim{
 			padding-bottom:20px;
 		}
-/* ========== Footer Styles ========== */
-
-            /**
-            * @tab Footer
-            * @section footer style
-            * @tip Set the background color and borders for your email's footer area.
-            * @theme footer
-            */
-            #templateFooter{
-                /*@editable*/ background-color:#212121;
-
-            }
-
-            /**
-            * @tab Footer
-            * @section footer contact text
-            * @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
-            * @theme footer
-            */
-            .preFooterContent{
-                /*@editable*/ color:#F8F8F8;
-                /*@editable*/ font-family:Arial;
-                /*@editable*/ font-size:16px;
-                /*@editable*/ line-height:24px;
-                padding-top:26px;
-                padding-right:20px;
-                padding-bottom:10px;
-                padding-left:20px;
-                /*@editable*/ text-align:left;
-            }
-
-            /**
-            * @tab Footer
-            * @section footer text
-            * @tip Set the styling for your email's social buttons.
-            * @theme footer
-            */
-            .socialFooterContent{
-                /*@editable*/ color:#F8F8F8;
-                /*@editable*/ font-family:Arial;
-                /*@editable*/ font-size:16px;
-                /*@editable*/ line-height:24px;
-                /*padding-top:20px;*/
-                padding-right:20px;
-                padding-bottom:22px;
-                padding-left:20px;
-                /*@editable*/ text-align:left;
-            }
-            .socialFooterContent img {
-                padding-right: 20px;
-                padding-top: 10px;
-                height: 20px;
-            }
-
-            .footer-button {
-                font-size: 14px;
-            }
-
-            /**
-            * @tab Footer
-            * @section footer text
-            * @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
-            * @theme footer
-            */
-            .footerContent{
-                /*@editable*/ color:#F8F8F8;
-                /*@editable*/ font-family:Arial;
-                /*@editable*/ font-size:14px;
-                /*@editable*/ line-height:20px;
-                padding-top:20px;
-                padding-right:20px;
-                padding-bottom:20px;
-                padding-left:20px;
-                /*@editable*/ text-align:left;
-            }
-
-            /**
-            * @tab Footer
-            * @section footer link
-            * @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
-            */
-            .footerContent a:link, .preFooterContent a:link, .socialFooterContent a:link, .footerContent a:visited, .preFooterContent a:visited, .socialFooterContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{
-                /*@editable*/ color:#F8F8F8;
-                /*@editable*/ font-weight:normal;
-            }
-            .preFooterContent a:link, .socialFooterContent a:link {
-                text-decoration: none;
-            }
-            .footerContent a:link, .footerContent a:visited, .footerContent a .yshortcuts, .footerContent a span {
-                text-decoration: underline;
-            }
+	/*
+	@tab Footer
+	@section footer style
+	@tip Set the background color and borders for your email's footer area.
+	@theme footer
+	*/
+		#templateFooter{
+			/*@editable*/background-color:#212121;
+		}
+	/*
+	@tab Footer
+	@section footer contact text
+	@tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+	@theme footer
+	*/
+		.preFooterContent{
+			/*@editable*/color:#F8F8F8;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:16px;
+			/*@editable*/line-height:24px;
+			padding-top:26px;
+			padding-right:20px;
+			padding-bottom:10px;
+			padding-left:20px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Footer
+	@section footer text
+	@tip Set the styling for your email's social buttons.
+	@theme footer
+	*/
+		.socialFooterContent{
+			/*@editable*/color:#F8F8F8;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:16px;
+			/*@editable*/line-height:24px;
+			padding-right:20px;
+			padding-bottom:22px;
+			padding-left:20px;
+			/*@editable*/text-align:left;
+		}
+		.socialFooterContent img{
+			padding-right:20px;
+			padding-top:10px;
+			height:20px;
+		}
+		.footer-button{
+			font-size:14px;
+		}
+	/*
+	@tab Footer
+	@section footer text
+	@tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+	@theme footer
+	*/
+		.footerContent{
+			/*@editable*/color:#F8F8F8;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:14px;
+			/*@editable*/line-height:20px;
+			padding-top:20px;
+			padding-right:20px;
+			padding-bottom:20px;
+			padding-left:20px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Footer
+	@section footer link
+	@tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+	*/
+		.footerContent a:link,.preFooterContent a:link,.socialFooterContent a:link,.footerContent a:visited,.preFooterContent a:visited,.socialFooterContent a:visited,.footerContent a .yshortcuts,.footerContent a span{
+			/*@editable*/color:#F8F8F8;
+			/*@editable*/font-weight:normal;
+		}
+		.preFooterContent a:link,.socialFooterContent a:link{
+			text-decoration:none;
+		}
+		.footerContent a:link,.footerContent a:visited,.footerContent a .yshortcuts,.footerContent a span{
+			text-decoration:underline;
+		}
+		.preference-text {
+                    display: none;
+                }
+            .preference-button {
+                display: inline-block;
+           }
 	@media only screen and (max-width: 600px){
 		body,table,td,p,a,li,blockquote{
 			-webkit-text-size-adjust:none !important;
@@ -478,20 +475,27 @@
 		}
 
 }	@media only screen and (max-width: 600px){
-	            /* ======== Footer Styles ======== */
+	/*
+	@tab Mobile Styles
+	@section footer text
+	@tip Make the body content text larger in size for better readability on small screens.
+	*/
+		.footerContent{
+			/*@editable*/font-size:14px !important;
+			/*@editable*/line-height:20px !important;
+		}
 
-                /**
-                * @tab Mobile Styles
-                * @section footer text
-                * @tip Make the body content text larger in size for better readability on small screens.
-                */
-                .footerContent{
-                    /*@editable*/ font-size:14px !important;
-                    /*@editable*/ line-height:20px !important;
+}	@media only screen and (max-width: 600px){
+		.footer-button{
+			font-size:12px;
+		}
+		.preference-text {
+                    display: inline-block;
                 }
-                .footer-button {
-                font-size: 12px;
-            }
+                .preference-button {
+                    display: none;
+                }
+
 
 }</style></head>
 
@@ -508,7 +512,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
                                         <tr>
                                             <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;">
-                                                <img src="https://gallery.mailchimp.com/0ab76cd515/images/03d3d9b2-39d5-42b9-ad2e-397a19853b39.png" style="height: 35px;">
+                                                <a href="https://www.red-badger.com"><img src="https://gallery.mailchimp.com/0ab76cd515/images/03d3d9b2-39d5-42b9-ad2e-397a19853b39.png" style="height: 35px;"></a>
                                             </td>
                                             <!-- *|IFNOT:ARCHIVE_PAGE|* -->
                                             <td valign="top" width="140" class="preheaderContent" style="padding-top:20px; padding-right:20px; padding-bottom:20px; padding-left:0; text-align:right" mc:edit="preheader_content01">
@@ -605,7 +609,7 @@
                                     <!-- BEGIN FOOTER // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
                                         <tr>
-                                            <td align="left" width="400">
+                                            <td align="left" width="60%">
                                                 <table width="100%">
                                                     <tr>
                                                         <td valign="top" class="preFooterContent">
@@ -617,17 +621,17 @@
 
                                                 </table>
                                             </td>
-                                            <td align="right" valign="top">
+                                            <td align="right" valign="top" width="40%">
                                                 <table width="100%">
                                                     <tr>
-                                                        <td valign="top" align="right" style="padding-top:37px;" class="footer-button"><a href="*|UPDATE_PROFILE|*" style="border:1px white solid; padding:9px 13px; font-weight:bold; text-align:center; margin:0; text-decoration:none; color:#ffffff; margin-right:20px; font-family:Arial;">Preferences</a></td>
+                                                        <td valign="top" align="right" style="padding-top:37px;" class="footer-button"><a href="*|UPDATE_PROFILE|*" style="border:1px white solid; padding:9px 13px; font-weight:bold; text-align:center; margin:0; text-decoration:none; color:#ffffff; margin-right:20px; font-family:Arial;" class="preference-button">Preferences</a></td>
                                                     </tr>
                                                 </table>
                                             </td>
                                         </tr>
                                         <tr colspan="2">
                                             <td valign="top" colspan="2" class="socialFooterContent">
-                                                <a href="https://twitter.com/redbadgerteam?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="https://gallery.mailchimp.com/0ab76cd515/images/74e995b3-3fd7-4ca3-9e1d-6c112823f261.png" class="socialIcon" ></a><a href="https://www.linkedin.com/company/red-badger"><img src="https://gallery.mailchimp.com/0ab76cd515/images/deea1c07-870f-46e7-a775-64ce8df86522.png" class="socialIcon"></a><a href="https://www.instagram.com/redbadgerteam/?hl=en"><img src="https://gallery.mailchimp.com/0ab76cd515/images/3c2ab674-bbc4-491d-979f-6e4b9a7a9acc.png" class="socialIcon"></a><a href="https://www.facebook.com/RedBadger/"><img src="https://gallery.mailchimp.com/0ab76cd515/images/54e4a5f5-03d6-43dd-bdf3-568011643166.png" class="socialIcon"></a><a href="https://www.youtube.com/channel/UCHlIVrJki1BxwKe7NtFYZRg"><img src="https://gallery.mailchimp.com/0ab76cd515/images/897fc07a-191f-43af-9d0d-445b25a93744.png" class="socialIcon"></a><a href="https://plus.google.com/+Redbadgerteam"><img src="https://gallery.mailchimp.com/0ab76cd515/images/9884262e-90c3-4828-9f75-52b8be200416.png" class="socialIcon"></a>
+                                                <a href="https://twitter.com/redbadgerteam?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="https://gallery.mailchimp.com/0ab76cd515/images/74e995b3-3fd7-4ca3-9e1d-6c112823f261.png" class="socialIcon"></a><a href="https://www.linkedin.com/company/red-badger"><img src="https://gallery.mailchimp.com/0ab76cd515/images/deea1c07-870f-46e7-a775-64ce8df86522.png" class="socialIcon"></a><a href="https://www.instagram.com/redbadgerteam/?hl=en"><img src="https://gallery.mailchimp.com/0ab76cd515/images/3c2ab674-bbc4-491d-979f-6e4b9a7a9acc.png" class="socialIcon"></a><a href="https://www.facebook.com/RedBadger/"><img src="https://gallery.mailchimp.com/0ab76cd515/images/54e4a5f5-03d6-43dd-bdf3-568011643166.png" class="socialIcon"></a><a href="https://www.youtube.com/channel/UCHlIVrJki1BxwKe7NtFYZRg"><img src="https://gallery.mailchimp.com/0ab76cd515/images/897fc07a-191f-43af-9d0d-445b25a93744.png" class="socialIcon"></a><a href="https://plus.google.com/+Redbadgerteam"><img src="https://gallery.mailchimp.com/0ab76cd515/images/9884262e-90c3-4828-9f75-52b8be200416.png" class="socialIcon"></a>
                                             </td>
                                         </tr>
                                         <tr colspan="2">
@@ -661,12 +665,12 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td valign="top" class="footerContent" style="padding-top: 0; padding-bottom:30px" >
-                                                            You are receiving this email because you signed up for our newsletter. You can <a href="*|UNSUB|*">unsubscribe here.</a>
+                                                        <td valign="top" class="footerContent" style="padding-top: 0; padding-bottom:30px">
+                                                            You are receiving this email because you signed up for our newsletter. You can <a href="*|UNSUB|*">unsubscribe here.</a><p class="preference-text">You can update your <a href="*|UPDATE_PROFILE|*">preferences here.</a></p>
                                                         </td>
                                                     </tr>
                                                 </table>
-                                            <td align="right" width="65" valign="bottom" class="footerContent" style="padding-top:0;padding-bottom:30px; text-align:right" width="50px">
+                                            </td><td align="right" width="50px" valign="bottom" class="footerContent" style="padding-top:0;padding-bottom:30px; text-align:right">
                                                 <table width="100%">
                                                     <tr>
                                                         <td><img src="https://gallery.mailchimp.com/0ab76cd515/images/78293a8d-558a-4f6a-96aa-9d3c533cde22.png" width="60px"></td>
